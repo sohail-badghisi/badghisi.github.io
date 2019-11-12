@@ -1,0 +1,1231 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Sohail Badghisi</title> 
+       <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+        <style type="text/css">
+            :root {
+    --primary-color:#de143c;
+    --secondary-color:white;
+}
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+.title {
+    margin: 3rem 0;
+    text-align: center;
+}
+.title span {
+    font-size: 3rem;
+}
+.title .underline {
+    width: 10%;
+    margin: 1% auto;
+    height: 1px;
+    background: crimson;
+}
+
+body {
+    transition: 0.5s ease;
+    background: #ffffff;
+    font-family:'lato',sans-serif;
+    color: #4b4b4b;
+}
+#home {
+    height:100vh;
+    background:url('oskar-yildiz-gy08FXeM2L4-unsplash.jpg');
+    background-size:cover;
+}
+#top-header {
+    display:flex;
+    background: rgba(0,0,0,.8);
+}
+#top-header div {
+    flex:1;
+    padding: 3.5rem 0;
+}
+
+#logo {
+    text-decoration:none;
+    color: white;
+    font-size:1.9rem;
+    margin-left: 4rem;
+    font-weight: bold;
+}
+#logo .fa {
+    color: #fd3e64;
+    font-size: 1.7rem;
+}
+#close {
+    opacity: 0;
+}
+.list {
+    display: flex;
+    list-style: none;
+    margin-top:.5rem;
+}
+.list a {
+    transition: 0.4s;
+    color: white;
+    text-decoration:none;
+    margin:1.5rem;
+    font-size:1.2rem;
+    transition: .4s;
+}
+.list .active {
+    border-bottom: 2px solid crimson;
+    padding: .4rem 0;
+}
+#bar {
+    display: none;
+}
+.banner {
+    margin-top: 1rem;
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: left;
+    padding-left: 4rem;
+}
+.banner h1 {
+    font-size:3rem;
+    color: white;
+    margin: .5rem 0;
+    text-shadow:.1rem .1rem .3rem rgba(0,0,0,0.7);
+}
+.banner h1:nth-child(2) {
+    margin-bottom: 2rem;
+    
+}
+
+.banner a {
+    font-size: 1.4rem;
+    border:1px solid crimson;
+    background: rgba(0, 0, 0, 0.15);
+    color: var(--secondary-color);
+    padding: .5rem .8rem;
+    text-decoration: none;
+    transition: .6s;
+    margin-right:  .5rem;
+}
+.banner a .fa {
+    font-size: 1rem;
+}
+.banner a:hover {
+    background: crimson;
+}
+.banner a:nth-child(1) {
+    background: crimson;
+}
+/* ------------End Home Section------------ */
+
+
+/* ------------Start About Section------------ */
+#about {
+    background: #ffffff;
+    padding: 0 4rem;
+    float: left;
+}
+
+.percentage {
+    opacity: 0;
+    transition: 5s;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+}
+.box {
+    border-radius: .2rem;
+    padding: 1rem;
+    text-align:center;
+}
+.box > div {
+    margin: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: .1%;
+}
+.box .fa {
+    background: crimson;
+    color: #fff;
+    font-size: 3rem;
+    padding: 1rem;
+    border-radius: 50%;
+}
+.box h3 {
+    text-align: center;
+    margin-bottom: .5rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #272727;
+}
+.box p {
+    text-align: center;
+    line-height: 1.4;
+}
+
+.wrapper {
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3rem;
+}
+.info {
+    width: 80%;
+    margin: auto;
+    font-family: 'roboto';
+    display: flex;
+    background: #f8f8f8;
+    border:1px solid #f0f0f0;
+    flex-direction: column;
+    text-align:center;
+}
+.info img {
+    width: 200px;
+    border-radius: 100px;
+    height: 200px;
+    margin: 1rem auto;
+}
+.info-title {
+    font-size: 1.7rem;
+    color: #383636;
+    margin: .8rem .9rem .4rem;
+}
+.info p {
+    margin: 0 1rem;
+    font-size: 1rem;
+    color: #6f6f6f;
+    line-height: 1.6;
+}
+
+.info-contact {
+    font-size: 1.2rem;
+    margin: 5% auto 6% auto;
+    color: crimson;
+    text-align: center;
+    padding: .5rem 3rem;
+}
+
+.skill {
+    display:flex;
+    flex-direction:column;
+}
+.progress {
+    background: #EEEEEE;
+    margin: 1rem 0;
+    display: flex;
+    font-size: 1.1rem;
+}
+.text {
+    font-size: 1rem;
+    background: crimson;
+    flex: 1.6;
+    padding: .3rem .5rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.progress-bar {
+    flex:4;
+}
+.progress-bg {
+    background: #ff6181;
+    height: 100%;
+    transition: 2s ease-in;
+    width: 0%;
+}
+.percentage {
+    flex: 1;
+    padding: .3rem 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* ------------End About Section------------ */
+
+
+
+/* ------------Start Project Section------------ */
+#project {
+    background: #efefef;
+    width: 100%;
+    float: left;
+    padding: 0 3rem 6rem;
+}
+.global-container {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-gap: 1rem;
+    grid-row-gap:2rem; 
+}
+
+.container {
+    position: relative;
+    background: white;
+    padding: 1rem;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.4;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.project-text {
+   color: white;
+    display: grid;
+    padding: .5rem 1.5rem;
+     
+}
+.project-text a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: .5rem ;
+    padding: .8rem 2rem;
+    background: crimson;
+}
+.see-more {
+    margin-top: 3rem ;
+    width: 20%;
+    text-align: center;
+    background:#4b4b4b;
+    padding: 1rem 0;
+    margin: 2rem auto 0 auto;
+    transition:0.5s ease;
+}
+.see-more:hover {
+    background: #5c5c5c;
+}
+.see-more a {
+    color: white;
+}
+/* ------------End Project Section------------ */
+
+#blog {
+    float: left;
+    width: 100%;
+    padding-bottom: 3rem;
+}
+.post {
+    display: grid;
+    padding: 1rem 4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 3rem;
+}
+
+.content h2{ 
+    font-size: 1.7rem;
+}
+.post-underline {
+    background: crimson;
+    height: 3px;
+    width: 100px;
+    margin: 1rem 0;
+}
+.post p {
+    font-size: 1.1rem;
+    color: #808080;
+}
+.logo {
+    margin: .7rem 0;
+}
+.logo a {
+    color: #ff6b89;
+    font-size: 1.2rem;
+}
+.logo div {
+    display: inline;
+    margin-left: 1rem;
+}
+.logo div i {
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    color: #939292;
+}
+
+/* -----------End Blog Section----------- */
+
+/* -----------Start Contact Section----------- */
+#contact {
+    background-color: #252934;
+    float: left;
+    width: 100%;
+    padding-bottom: 10vh;
+}
+
+#contact .title span {
+    color: white;
+}
+#contact .title .underline {
+    background: white;
+}
+.inputBox {
+    margin: auto;
+    width: 45%;
+}
+.control {
+    display: block;
+    width: 100%;
+    padding: .6rem .4rem;
+    background: #1E242C;
+    border: none;
+    color: white;
+    margin: .4rem 0;
+    font-size: 1rem;
+    outline: none;
+}
+textarea {
+    color: white;
+    width: 100%;
+    background: #1E242C;
+    border: none;
+    height: 15vh;
+    outline: none;
+    font-size: 1.3rem;
+    padding: 0 .4rem;
+}
+#submit {
+    float: right;
+    color: #fff;
+    border:1px solid #fff;
+    text-decoration: none;
+    padding: .5rem 2rem;
+    margin-top: 1rem;
+    transition: 0.5s;
+}
+#submit:hover {
+    background: crimson;
+    border:1px solid crimson;
+}
+/* -----------End Contact Section----------- */
+
+/* -----------Start Footer Section----------- */
+#theFooter {
+    background: #1B242F;
+    float: left;
+    width: 100%;
+}
+#goTop {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+#topSign {
+    padding: 1rem;
+    background: crimson;
+    color: white;
+    transition: 0.5s ease;
+}
+.social {
+    padding: 5rem 0 2rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: .1fr .1fr .1fr .1fr;
+    justify-content: center;
+    text-align: center;
+}
+.social div {
+    width: 50%;
+    cursor: pointer;
+    background: #262f38;
+    color: #fff;
+    margin: 0 1rem;
+    padding: .8rem 0;
+    font-size: 1.1rem;
+    transition: 0.4s;
+}
+.social div:hover {
+    background:crimson;
+}
+.copyRight {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+.copyRight span {
+    color: #d06479;
+    margin-left: .4rem;
+}
+/* -----------End Footer Section----------- */
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    #home {
+        background: url('img/s6.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    #top-header {
+        background: var(--secondary-color);
+    }
+    #top-header div {
+        padding: 1.1rem 0 ;
+    }
+    #top-header div:checked {
+        outline: none;
+    }
+    #top-header div:nth-child(1) {
+        width: 100%;
+        display: block;
+        flex: 4;
+    }
+    #top-header div > a {
+        display: inline;
+        color: #4b4b4b;
+    }
+    
+    #logo {
+        display: block;
+        margin-left: .7rem;
+        font-size: 1.5rem;
+        color: #4b4b4b;
+    }
+    
+    #logo .fa{
+        color: var(--primary-color);
+    }
+    #bar {
+        top: 2.8%;
+        color: #4b4b4b;
+        display: block;
+        font-size: 1.7rem;
+        outline: none;
+    }
+    
+    #close {
+        display: none;
+        color: #4b4b4b;
+    }
+    .menu {
+        position: absolute;
+        width: 100%;
+        position: absolute;
+        left: 0%;
+        overflow: hidden;
+        top:12.6%;
+        height: 0%;
+        
+    }
+    .toggle {
+        height: 90%;
+        transition: 1.2s ease-out;
+    }
+    .list {
+        width: 100%;
+        padding-bottom: .3rem;
+        overflow: hidden;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background: #4b4b4b;
+        display: block;
+        padding-top: 0;
+    }
+    .list li {
+        margin: 1.7rem 0;
+        display: block;
+        overflow: hidden;
+        
+    }
+    .list a {
+        color: #fff;
+        font-size: 1.3rem;
+    }
+    .list .active {
+        color: #8e8e8e;
+        border: none;
+    }
+    
+    .banner {
+        margin: 0;
+        padding-left: 2rem;
+        padding: 0 2rem 0 1rem;
+        font-family: 'roboto';
+        text-align: center;
+        background: rgba(0,0,0,.7);
+    }
+    .banner h1 {
+        font-size: 2rem;
+        margin: .6rem 0
+    }
+    .banner a:nth-child(1) {
+        font-size: 1.3rem;
+        margin: 0 .2rem;
+        padding: .6rem .5rem;
+        background: var(--primary-color);
+        border:none;
+    }
+    .banner a:nth-child(2) {
+        display: none;
+    }
+    /* ------ End Navbar And Banner ------*/
+    
+    
+    
+    /* ------ Start About ------*/
+    .title {
+        margin: 0;
+        padding: 2rem 0;
+        color: #4b4b4b;
+    }
+    .title .underline {
+        margin-top: .6rem;
+        background: #a5a5a5;
+        width: 40%;
+        height: 2px;
+    }
+    #about {
+        padding: 0;
+        width: 100%;
+    }
+    .boxes {
+        grid-template-columns: 1fr;
+        grid-column-gap: 0rem;
+    }
+    .box {
+        padding: 0 2rem;
+        margin: 1.5rem 0;
+    }
+    .box:last-child {
+        display: none;
+    }
+    .box div {
+        margin: 0;
+        padding: 0;
+    }
+    .box div .fa {
+        padding: .6rem;
+        background: var(--primary-color);
+    }
+    .boxes h3 {
+        color: #3e5169;
+        font-weight: bold;
+        margin-top: 1rem;
+        margin-bottom: .3rem;
+        font-size: 1.6rem;
+    }
+    .boxes p {
+        font-size: 1rem;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-column-gap: 1rem;
+    }
+    .info {
+        width: 70%;
+        font-family: lato;
+        margin-bottom: 2rem;
+        padding: 0;
+    }
+    
+    .info img {
+        border-radius: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .info-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: .5rem;
+    }
+    .info p {
+        margin: 0 .5rem;
+        font-size: 1rem;
+        color: #6f6f6f;
+        line-height: 1.5;
+    }
+
+    .info-contact {
+        font-size: 1.2rem;
+        margin: 5% auto 6% auto;
+        background: crimson;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        padding: .5rem 3rem;
+    }
+
+    .skill {
+        display:flex;
+        flex-direction:column;
+        margin: 1rem ;
+    }
+    .progress {
+        background: #EEEEEE;
+        margin: 1rem 0;
+        display: flex;
+        font-size: 1.1rem;
+    }
+    .text {
+        font-size: .9rem;
+        background: crimson;
+        flex: 4;
+        padding: .4rem .4rem;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+    }
+    .progress-bar {
+        flex:8;
+    }
+    .progress-bg {
+        background: #ff6181;
+        height: 100%;
+        transition: 2s ease-in;
+        width: 0%;
+    }
+    .percentage {
+        flex: 3;
+        padding: .5rem 0;
+        font-size: .7rem;
+    }
+    
+    #project {
+        padding: 2rem;
+    }
+    .global-container {
+        display: grid;
+        grid-template-columns:  1fr ;
+        grid-gap: 1rem;
+        grid-row-gap:3rem; 
+    }
+
+    .container {
+        position: relative;
+        background: white;
+        padding: .4rem;
+    }
+    
+    .see-more {
+        width: 50%;
+        text-align: center;
+        background:#4b4b4b;
+        padding: 1rem 0;
+        margin: 3rem auto 0 auto;
+        transition:0.5s ease;
+    }
+    
+    #blog {
+        padding-bottom: 2rem;
+    }
+    .post {
+        display: grid;
+        padding: 1rem 2rem;
+        grid-template-columns: 1fr ;
+        grid-column-gap: 1rem;
+        grid-row-gap: 4rem;
+    }
+
+    .content h2{ 
+        font-size: 1.4rem;
+    }
+    .post-underline {
+        background: crimson;
+        height: 1px;
+        width: 40%;
+        margin: .6rem 0 2rem 0;
+    }
+    .post p {
+        font-size: 1rem;
+        color: #808080;
+    }
+    .logo {
+        margin: .6rem 0;
+    }
+    .logo a {
+        color: #4b4b4b;
+        font-size: 1.2rem;
+    }
+    .logo div {
+        display: inline;
+        margin-left: 1rem;
+    }
+    .logo div i {
+        font-size: 1rem;
+        margin: 0 .5rem;
+        color: #939292;
+    }
+    #contact {
+        float: left;
+        width: 100%;
+        padding-bottom: 15vh;
+    }
+
+
+    .inputBox {
+        margin: auto;
+        width: 90%;
+    }
+    .control {
+        width: 100%;
+        margin: .6rem 0;
+    }
+    
+/* -----------End Contact Section----------- */
+
+    .social {
+        padding: 3rem 0 2rem 0;
+        width: 100%;
+    }
+    .social div {
+        font-size: 1rem;
+        padding: .7rem;
+        transition: 0.4s;
+    }
+
+    .copyRight {
+        border-top: 1px solid #777575;
+        width: 80%;
+        margin: auto;
+        padding: 1rem 0;
+        font-size: 1rem;
+    }
+    .copyRight span {
+        color: #ff607f;
+        margin-left: .4rem;
+    }
+/* -----------End Footer Section----------- */
+
+
+
+    
+}
+        </style>
+    </head>
+    <body>
+        
+        <div id="home">
+            <header id="top-header">
+                <div>
+                    <a href="#" id="logo">
+                        <i class="fa fa-code"></i>
+                        Sohail Badghisi
+                    </a>
+                </div>
+                <div>
+                    <a href="#" id="bar"><i class="fa fa-bars"></i></a>
+                    <nav class="menu" id="navbar">
+                        <ul class="list" id="menuBar">
+                            <a href="#" id="close">
+                                <i class="fa fa-close"></i>
+                            </a>
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <section class="banner">
+                <h1>Hello,I am Sohail Badghisi.</h1>
+                <h1>A Front End Developer.</h1>
+                <div>
+                    <a href="#">View my work 
+                        <i class="fa fa-arrow-down"></i>
+                    </a>
+                    <a href="#">Hire Me 
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </section>
+        </div><!-- End Home Section -->
+        
+        <!--Start About Section -->
+        <section id="about">
+            
+            <header class="title">
+                <span>About</span>
+                <div class="underline"></div>
+            </header>
+            
+            <section class="boxes">
+                <div class="box">
+                    <div>
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <h3>Coding</h3>
+                    <p>
+                        Fast load times and lag free interaction, my highest priority.
+                    </p>
+                </div>
+                <div class="box">
+                    <div>
+                        <i class="fa fa-spinner"></i>
+                    </div>
+                    <h3>Fast</h3>
+                    <p>
+                        Fast load times and lag free interaction, my highest priority.
+                    </p>
+                </div>
+                <div class="box">
+                    <div>
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                    <h3>Right things</h3>
+                    <p>
+                        Fast load times and lag free interaction, my highest priority.
+                    </p>
+                </div>
+                <div class="box">
+                    <div>
+                        <i class="fa fa-book"></i>
+                    </div>
+                    <h3>Book</h3>
+                    <p>
+                        Fast load times and lag free interaction, my highest priority.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="wrapper">
+                <div class="info">
+                    <img src="sohail.jpg"/>
+                    <span class="info-title">Who is this guy?</span>
+                    <p>
+                        I'm the Front-End Developer for EyeCue Lab in Portland, 
+                        OR.
+                        I have serious passion for UI effects,
+                        animations and creating intuitive,
+                        dynamic user experiences
+                    </p>
+                    <a href="#" class="info-contact">Let's build</a>
+                </div>
+                <div class="skill" id="mySkill">
+                    <div class="progress" style="margin-top: 0;">
+                        <div class="text">Html</div>
+                        <div class="progress-bar" >
+                            <div id='a' class="progress-bg"></div>
+                        </div>
+                        <div class="percentage">95%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="text">Css</div>
+                        <div class="progress-bar">
+                            <div class="progress-bg"></div>
+                        </div>
+                        <div class="percentage">95%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="text">Javascript</div>
+                        <div class="progress-bar">
+                            <div class="progress-bg"></div>
+                        </div>
+                        <div class="percentage">80%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="text">Scss</div>
+                        <div class="progress-bar">
+                            <div class="progress-bg"></div>
+                        </div>
+                        <div class="percentage">85%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="text">Jquery</div>
+                        <div class="progress-bar">
+                            <div class="progress-bg"></div>
+                        </div>
+                        <div class="percentage">65%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="text">Bootstrap</div>
+                        <div class="progress-bar">
+                            <div class="progress-bg"></div>
+                        </div>
+                        <div class="percentage">55%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="text">Git</div>
+                        <div class="progress-bar">
+                            <div class="progress-bg"></div>
+                        </div>
+                        <div class="percentage">75%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="text">Novel</div>
+                        <div class="progress-bar">
+                            <div class="progress-bg"></div>
+                        </div>
+                        <div class="percentage">90%</div>
+                    </div>
+                </div>
+            </section>
+            
+        </section>
+        <!--End About Section-->
+              
+        <!--Start Project Section-->
+        <section id="project">    
+            <header class="title">
+                <span>Projects</span>
+                <div class="underline"></div>
+            </header>
+            <div class="global-container">
+                <section class="container"> 
+                    <img src="img/work-1.jpg" class="image" style="width: 100%">
+                        <div class="middle">
+                            <div class="project-text">
+                                <a href="#">Download</a>
+                                <a href="#">View</a>
+                            </div>
+                        </div>
+                </section>
+                <section class="container"> 
+                    <img src="img/work-2.jpg" class="image" style="width: 100%">
+                        <div class="middle">
+                            <div class="project-text">
+                                <a href="#">Download</a>
+                                <a href="#">View</a>
+                            </div>
+                        </div>
+                </section>
+                <section class="container"> 
+                    <img src="img/work-3.jpg" class="image" style="width: 100%">
+                        <div class="middle">
+                            <div class="project-text">
+                                <a href="#">Download</a>
+                                <a href="#">View</a>
+                            </div>
+                        </div>
+                </section>
+                <section class="container"> 
+                        <img src="img/work-4.jpg" class="image" style="width: 100%">
+                        <div class="middle">
+                            <div class="project-text">
+                                <a href="#">Download</a>
+                                <a href="#" class="view">View</a>
+                            </div>
+                        </div>
+                </section>
+            </div>
+            <div class="see-more">
+                    <a href="#">More Project</a>
+                </div>
+        </section>
+        <!--End Project Section-->
+        
+        
+        <!--Start Blog Section -->
+        <section id="blog">
+            <header class="title">
+                <span>Blog</span>
+                <div class="underline"></div>
+            </header>
+            <section class="post">
+                <article class="content">
+                    <h2>The power of Javascript!</h2>
+                    <div class="post-underline"></div>
+                    <p>
+                        generator
+                        Reference site about Lorem Ipsum, 
+                        giving information on its origins, 
+                        as well as a random Lipsum generator
+                    </p>
+                    <div class="logo">
+                        <a href="#">More</a>
+                        <div>
+                            <i class="fa fa-comment"> 4</i>
+                            <i class="fa fa-eye"> 14</i>
+                        </div>
+                    </div>
+                </article>
+                <article class="content">
+                    <h2>Who is a front end developer?</h2>
+                    <div class="post-underline"></div>
+                    <p>
+                        Lorem Ipsum, 
+                        giving information on its origins, 
+                        as well as a random Lipsum generator
+                    </p>
+                    <div class="logo">
+                        <a href="#">More</a>
+                        <div>
+                            <i class="fa fa-comment"> 4</i>
+                            <i class="fa fa-eye"> 14</i>
+                        </div>
+                    </div>
+                </article>
+                <article class="content">
+                    <h2>Who is a front end developer?</h2>
+                    <div class="post-underline"></div>
+                    <p>
+                        Lorem Ipsum, 
+                        giving information on its origins, 
+                        as well as a random Lipsum generator
+                    </p>
+                    <div class="logo">
+                        <a href="#">More</a>
+                        <div>
+                            <i class="fa fa-comment"> 4</i>
+                            <i class="fa fa-eye"> 14</i>
+                        </div>
+                    </div>
+                </article>   
+                <article class="content">
+                    <h2>Different between let , var and const?</h2>
+                    <div class="post-underline"></div>
+                    <p>
+                        Lorem Ipsum, 
+                        giving information on its origins, 
+                        as well as a random Lipsum generator
+                    </p>
+                    <div class="logo">
+                        <a href="#">More</a>
+                        <div>
+                            <i class="fa fa-comment"> 4</i>
+                            <i class="fa fa-eye"> 14</i>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <!--End Blog Section -->
+        
+        
+        <!--Start Contact Section-->
+        <section id="contact">
+             <header class="title">
+                <span>Contact</span>
+                <div class="underline"></div>
+            </header>
+            <section class="inputBox">
+                <div>
+                    <input type="text" placeholder="Username" class="control">
+                </div>
+                <div>
+                    <input type="email" placeholder="Email" class="control">
+                </div>
+                <div>
+                    <textarea placeholder="Message">
+                        
+                    </textarea>
+                </div>
+                <div>
+                    <a href="#" id="submit">Submit</a>
+                </div>
+            </section>
+        </section>
+        <!--End Contact Section-->
+        <!--Start Footer Section-->
+        <footer id="theFooter">
+            <div id="goTop">
+                <a href="#" id="topSign">
+                    <i class="fa fa-arrow-up"></i>
+                </a>
+            </div>
+             <div class="social">
+                 <div>
+                     <i class="fa fa-linkedin"></i>
+                </div>
+                <div>
+                    <i class="fa fa-facebook"></i>
+                </div>
+                <div>
+                    <i class="fa fa-instagram"></i>
+                </div>
+                <div>
+                    <i class="fa fa-github"></i>
+                </div>
+             </div>
+             <section class="copyRight">
+                 SohailBadghisi <span>@2019</span>
+             </section>
+        </footer>
+        <!--End Footer Section-->
+        <script type="text/javascript">
+            var skill = document.getElementById('mySkill');
+var percentage = document.getElementsByClassName('percentage');
+var article = document.getElementsByClassName('content');
+var closeBtn = document.getElementById('close');
+var menu = document.getElementById('menuBar');
+var nav = document.getElementById('navbar');
+var navBarIcon = document.getElementById('bar');
+ 
+
+window.addEventListener('load',progress);
+for(let i=0; i<article.length; i++) {
+    article[i].addEventListener('mouseover', fun1);
+}
+
+closeBtn.addEventListener('click', hideMenu);
+navBarIcon.addEventListener('click', showMenu);
+
+function fun1(e) {
+    this.style.opacity='1';
+    for(let i=0; i<article.length; i++) {
+        article[i].style.opacity='0.5';
+        article[i].style.transition='0.4s ease';
+        if(article[i]===this) {
+            this.style.opacity='1';
+            this.style.transition='0.4s ease';
+        }
+    }
+}
+
+function progress() {
+    document.getElementsByClassName('progress-bg')[0].style.width='95%';
+    document.getElementsByClassName('progress-bg')[1].style.width='95%';
+    document.getElementsByClassName('progress-bg')[2].style.width='80%';
+    document.getElementsByClassName('progress-bg')[3].style.width='75%';
+    document.getElementsByClassName('progress-bg')[4].style.width='55%';
+    document.getElementsByClassName('progress-bg')[5].style.width='85%';
+    document.getElementsByClassName('progress-bg')[6].style.width='80%';
+    document.getElementsByClassName('progress-bg')[7].style.width='90%';
+    for(let i = 0; i<percentage.length; i++) {
+        percentage[i].style.opacity='1';
+    }
+} 
+
+function showMenu() {
+    nav.classList.toggle('toggle');
+}
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
