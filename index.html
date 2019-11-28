@@ -662,12 +662,13 @@ textarea {
     #logo {
         margin-left: 2rem;
     }
-    #close {
-        display: none;
+    .navbar-wrapper  {
+        overflow: hidden;
     }
     #navbar {
-        top: 10.6%;
+        top: 9.6%;
         width: 100%;
+        overflow: hidden;
     }
     .menu {
         margin-bottom: 5rem;
@@ -675,7 +676,8 @@ textarea {
         margin: 0;
     }
     .list {
-        margin: .5rem 0 0 0 ;
+        overflow: hidden;
+        margin: 2rem 0 0 0 ;
         padding: 0;
     }
     .list a {
@@ -685,25 +687,33 @@ textarea {
         background: rgba(0, 0, 0, 0.75);
     }
     #sohail {
-        color: #FFD71C;
-        font-weight: 100;
-        border-bottom: 1px solid var(--secondary-color-two);
+        font-family: sans-serif;
+        font-weight: 500;    
     }
     .boxes {
         grid-template-columns: 1fr;
     }
+    .box .fa {
+        padding: .9rem .8rem;
+        font-size: 2rem;
+    }
+    .box:last-child {
+        display: none;
+    }
     .box div {
         margin-bottom: .5rem;
     }
+    #myInfo {
+        padding-bottom: 5rem;
+    }
     .info {
-        margin: 10%  auto 15% auto;
+        margin: 10%  auto 10% auto;
         width: 70%;
-        background: #eee;
     }
     .info img {
-        margin: 0 auto;
-        width: 100%;
-        border-radius: 0;
+        margin: 5% auto;
+        width: 70%;
+        border-radius: 50%;
     }
     .info span {
         color: var(--secondary-color-two);
@@ -715,17 +725,28 @@ textarea {
         font-size: .9rem;
     }
     .info-contact {
-        background: var(--primary-color-two);
         color: var(--secondary-color-two);
     }
     .progress {
-        width: 90%;
+        width: 80%;
         margin: 5% auto;
     }
     .text {
         background: #4b4b4b;
         color: #fff;
-        flex: 2;
+        border-bottom-left-radius:.5rem;
+        border-top-left-radius: .5rem;
+        flex: 1.8;
+    }
+    #html {background-color: darkolivegreen;}
+    #css  {background-color: cadetblue ;}
+    #js   {background-color: saddlebrown;}
+    #jquery {background-color:darkslateblue;}
+    #bootstrap {background-color:sienna;}
+    #git {background-color:slateblue;}
+    #html {background-color: darkolivegreen;}
+    .percentage {
+        font-size: .8rem;
     }
     .progress-bg {
         background: #b4b4b4;
@@ -736,6 +757,60 @@ textarea {
     .post {
         grid-template-columns: 1fr;
     }
+    .panel {
+        width: 80%;
+        margin: auto;
+    }
+    .content h2{ 
+        font-size: 1.3rem;
+    }
+    .post-underline {
+        margin: .3rem 0;
+    }
+    .post p {
+        font-size: 1rem;
+        color: #808080;
+    }
+    .logo {
+        margin: 2rem 0;
+    }
+    .logo a {
+        background: #4b4b4b;
+        color: #fff;
+        padding: .5rem ;
+        font-size: .9rem;
+        border-radius: .1rem;
+        text-decoration: none;
+    }
+    .logo div {
+        display: inline;
+        margin-left: 1rem;
+    }
+    .logo div i {
+        font-size: .8rem;
+        margin: 0 .2rem;
+        color: #939292;
+    }
+    .social {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-left: 1rem;
+    }
+    .social div {
+        padding: .5rem .7rem ;
+        border-radius: 5%;
+    }
+
+    .copyRight {
+        border-top: 1px solid #eee;
+        padding-top: 2rem;
+        font-size: .9rem;
+        padding-bottom:2rem;
+    }
+}
+
+
+
+
 
         </style>
     </head>
