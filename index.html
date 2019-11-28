@@ -692,16 +692,21 @@ textarea {
     }
     .boxes {
         grid-template-columns: 1fr;
+        padding: 0;
     }
     .box .fa {
-        padding: .9rem .8rem;
-        font-size: 2rem;
+        margin: 0;
+        font-size: 4rem;
+        background: none;
+        color: #ffd617;
+        padding: 0;
     }
     .box:last-child {
         display: none;
     }
     .box div {
-        margin-bottom: .5rem;
+        
+        padding-bottom: 0;
     }
     #myInfo {
         padding-bottom: 5rem;
@@ -709,6 +714,8 @@ textarea {
     .info {
         margin: 10%  auto 10% auto;
         width: 70%;
+        background: #fff;
+        box-shadow: none;
     }
     .info img {
         margin: 5% auto;
@@ -716,12 +723,12 @@ textarea {
         border-radius: 50%;
     }
     .info span {
-        color: var(--secondary-color-two);
+        color: #3b3b3b;
         font-size: 1.5rem;
         margin: .5rem 0;
     }
     .info p {
-        color: var(--secondary-color-onw);
+        color: var(--secondary-color-one);
         font-size: .9rem;
     }
     .info-contact {
@@ -736,7 +743,7 @@ textarea {
         color: #fff;
         border-bottom-left-radius:.5rem;
         border-top-left-radius: .5rem;
-        flex: 1.8;
+        flex: 2;
     }
     #html {background-color: darkolivegreen;}
     #css  {background-color: cadetblue ;}
@@ -749,7 +756,7 @@ textarea {
         font-size: .8rem;
     }
     .progress-bg {
-        background: #b4b4b4;
+        background: #dbdbdb;
     }
     .global_wrapper {
         grid-template-columns: 1fr;
