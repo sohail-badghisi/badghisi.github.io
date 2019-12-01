@@ -4,10 +4,9 @@
         <title>Sohail Badghisi</title> 
        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-        <style type="text/css">
-            :root {
-    --primary-color-one:#FFD71C;
-    --primary-color-two:#edc326;
+    <style type="text/css">
+                  :root {
+    --primary-color-one:#1F6075;
     --secondary-color-one:#4b4b4b;
     --secondary-color-two:#000;
 }
@@ -42,7 +41,7 @@ body {
 
 .top-header {
     display:flex;
-    background: var(--secondary-color-two);
+    background: #eee;
     float: left;
     width: 100%;
     padding: .8rem 0;
@@ -54,13 +53,13 @@ body {
 
 #logo {
     text-decoration:none;
-    color: #fff;
+    color: #4b4b4b;
     font-size:1.9rem;
     margin-left: 4rem;
     font-weight: bold;
 }
 #logo .fa {
-    color: var(--primary-color-one);
+    color: #000;
     font-size: 1.7rem;
 }
 #close {
@@ -73,9 +72,9 @@ body {
 }
 .list a {
     transition: 0.4s;
-    color: #fff;
+    color: #4b4b4b;
     text-decoration:none;
-    margin: 0 1rem;
+    margin: 0 1.7rem;
     font-size:1.2rem;
     transition: .4s;
 }
@@ -89,7 +88,7 @@ body {
     float: left;
     width: 100%;
     height: 100vh;
-    background: url('https://imgbbb.com/images/2019/11/27/georgie-cobbs-muOHbrFGEQY-unsplash.jpg');
+    background: url('https://i.ibb.co/V3k461P/mac.png');
     background-size:cover;
     background-position: center;
 }
@@ -102,15 +101,12 @@ body {
     justify-content: center;
 }
 .banner h1 {
-    font-size:2.7rem;
+    font-size:3rem;
     color: #fff;
     margin: .3rem 0;
 }
-.banner h1:nth-child(2) {
-    font-size: 2.4rem;
-}
 #sohail {
-    color: var(--secondary-color-two);
+    color: #77ceea;
 }
 .banner h1:nth-child(2) {
     margin-bottom: 1.2rem;
@@ -118,14 +114,19 @@ body {
 
 .banner a {
     font-size: 1.4rem;
-    background: var(--primary-color-one);
-    color: #151412;
+    background: transparent;
+    color: #fff;
+    border:2px solid #3996b4;
     padding: .5rem .8rem;
     text-decoration: none;
     transition: .6s;
     margin-right:  .5rem;
     border-radius:.1rem;
 }
+            .banner a:hover {
+                background: #3996b4;
+            }
+            
 .banner a .fa {
     font-size: 1rem;
 }
@@ -149,9 +150,12 @@ body {
     float: left;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     grid-column-gap: 3rem;
     padding-bottom: 3rem;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
     position: relative;
 }
 .box {
@@ -170,8 +174,8 @@ body {
     border-radius: .1%;
 }
 .box .fa {
-    background: var(--secondary-color-two);
-    color: var(--primary-color-one);
+    background: var(--primary-color-one);
+    color: #fff;
     font-size: 2.6rem;
     padding: 1rem 1rem;
     border-radius: 50%;
@@ -206,11 +210,9 @@ body {
     overflow: hidden;
     font-family: 'roboto';
     display: flex;
-    background: var(--secondary-color-one);
     flex-direction: column;
     text-align:center;
-    box-shadow:.1rem .1rem .6rem
-        rgba(88, 87, 82, 0.7);
+   
 }
 .info img {
     width: 200px;
@@ -220,25 +222,22 @@ body {
 }
 .info-title {
     font-size: 1.7rem;
-    color: #fff;
+    color: #4b4b4b;
     margin: .8rem .9rem .4rem;
 }
 .info p {
     margin: 0 1rem;
     font-size: 1rem;
-    color: #fff;
+    color: #4b4b4b;
     line-height: 1.6;
 }
 
 .info-contact {
-    font-size: 1.2rem;
-    margin: 5% auto  auto;
-    background: var(--primary-color-two);
+    font-size: 1.3rem;
+    margin: 1rem 0;
     text-align: center;
-    padding: .6rem 3rem;
     width: 100%;
     color: #000;
-    text-decoration: none;
 }
 
 .skill {
@@ -254,7 +253,7 @@ body {
 .text {
     font-size: .9rem;
     font-weight: 400;
-    background: var(--secondary-color-two);
+    background: var(--primary-color-one);
     flex: 1.6;
     padding: .3rem .5rem;
     text-align: center;
@@ -265,7 +264,7 @@ body {
     flex:4;
 }
 .progress-bg {
-    background: var(--secondary-color-one);
+    background: #56a4be;
     height: 100%;
     transition: 2s ease-in;
     width: 0%;
@@ -345,11 +344,13 @@ body {
 }
 .btn-preview:hover {
     border-color: transparent;
-    background: var(--primary-color-one);
+    background: #3996b4;
+    color: #fff;
 }
 .btn-buy {
-    background: var(--primary-color-one);
+    background: #3996b4;
     border: none;
+    color: #fff;
 }
 /* ------------End Project Section------------ */
 
@@ -400,7 +401,7 @@ body {
 
 /* -----------Start Contact Section----------- */
 #contact {
-    background-color: var(--secondary-color-one);
+    background-color: #3c879f;
     float: left;
     width: 100%;
     padding-bottom: 10vh;
@@ -444,9 +445,9 @@ textarea {
 }
 #submit {
     float: right;
-    color: #fff;
+    color: #14194e;
     font-weight: 400;
-    border:1px solid var(--primary-color-one);
+    border:1px solid #fff;
     border-radius: .2rem;
     text-decoration: none;
     padding: .5rem 2rem;
@@ -456,13 +457,13 @@ textarea {
 #submit:hover {
     background: var(--primary-color-one);
     border:1px solid var(--primary-color-one);
-    color: var(--secondary-color-two);
+    color: #fff;
 }
 /* -----------End Contact Section----------- */
 
 /* -----------Start Footer Section----------- */
 #theFooter {
-    background: var(--secondary-color-two);;
+    background: var(--primar-color-one);;
     float: left;
     width: 100%;
 }
@@ -473,11 +474,11 @@ textarea {
 }
 #goTop :hover {
     background: var(--primary-color-one);
-    color: #000;
+    color: #fff;
 }
 #topSign {
     padding: 1rem;
-    background: #363636;
+    background: #464646;
     color: white;
     transition: 0.5s ease;
 }
@@ -492,8 +493,7 @@ textarea {
 .social div {
     width: 50%;
     cursor: pointer;
-    background: var(--primary-color-two);
-    color: black;
+    color: #343434;
     margin: 0 1rem;
     padding: .8rem 0;
     font-size: 1.1rem;
@@ -559,11 +559,11 @@ textarea {
         position: absolute;
         padding: 0;
         margin: 0;
-        background: #343333;
+        background: #fff;
         right: 0%;
         height: 0%;
         overflow: hidden;
-        top:9.6%;
+        top:9.4%;
         width: 30%;
         transition: 0.4s;
     }
@@ -651,13 +651,14 @@ textarea {
         padding: 2rem 0;
     }
     .title .underline {
-        width: 40%;
+        width: 20%;
+        background: #3996b4;
     }
     #about {
         padding: 0;
     }
     #bar {
-        color: var(--primary-color-one);
+        color: #1f6277;
     }
     #logo {
         margin-left: 2rem;
@@ -666,19 +667,22 @@ textarea {
         overflow: hidden;
     }
     #navbar {
-        top: 9.6%;
+        top: 9.%;
         width: 100%;
         overflow: hidden;
+        
     }
     .menu {
         margin-bottom: 5rem;
         padding: 0;
         margin: 0;
+        background: #fff;
     }
     .list {
         overflow: hidden;
         margin: 2rem 0 0 0 ;
         padding: 0;
+        background: #ffffff;
     }
     .list a {
         font-size: 1.2rem;
@@ -698,12 +702,10 @@ textarea {
         margin: 0;
         font-size: 4rem;
         background: none;
-        color: #ffd617;
+        color: #3996b4;
         padding: 0;
     }
-    .box:last-child {
-        display: none;
-    }
+    
     .box div {
         
         padding-bottom: 0;
@@ -815,10 +817,6 @@ textarea {
     }
 }
 
-
-
-
-
         </style>
     </head>
     <body>
@@ -866,15 +864,6 @@ textarea {
             </header>
             
             <section class="boxes">
-                <div class="box">
-                    <div>
-                        <i class="fa fa-code"></i>
-                    </div>
-                    <h3>Coding</h3>
-                    <p>
-                        Fast load times and lag free interaction, my highest priority.
-                    </p>
-                </div>
                 <div class="box">
                     <div>
                         <i class="fa fa-spinner"></i>
