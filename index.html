@@ -4,8 +4,9 @@
         <title>Sohail Badghisi</title> 
        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-    <style type="text/css">
-                  :root {
+        <link rel="stylesheet" type="text/css" href="portfolio.css"/>
+        <style type="text/css">
+                           :root {
     --primary-color-one:#1F6075;
     --secondary-color-one:#4b4b4b;
     --secondary-color-two:#000;
@@ -55,6 +56,7 @@ body {
     text-decoration:none;
     color: #4b4b4b;
     font-size:1.9rem;
+    font-family: monospace;
     margin-left: 4rem;
     font-weight: bold;
 }
@@ -251,7 +253,7 @@ body {
     font-size: 1.1rem;
 }
 .text {
-    font-size: .9rem;
+    font-size: .8rem;
     font-weight: 400;
     background: var(--primary-color-one);
     flex: 1.6;
@@ -271,6 +273,7 @@ body {
 }
 .percentage {
     flex: 1;
+    font-size: .8rem;
     padding: .3rem 0;
     font-size: 1rem;
     text-align: center;
@@ -667,7 +670,8 @@ textarea {
         overflow: hidden;
     }
     #navbar {
-        top: 9.%;
+        border-bottom:3px solid #0a465a ;
+        top: 9.5%;
         width: 100%;
         overflow: hidden;
         
@@ -698,9 +702,12 @@ textarea {
         grid-template-columns: 1fr;
         padding: 0;
     }
+    .box:nth-child(2) {
+        background: #eee;;
+    }
     .box .fa {
         margin: 0;
-        font-size: 4rem;
+        font-size: 5rem;
         background: none;
         color: #3996b4;
         padding: 0;
@@ -721,7 +728,7 @@ textarea {
     }
     .info img {
         margin: 5% auto;
-        width: 70%;
+        width: 80%;
         border-radius: 50%;
     }
     .info span {
@@ -743,8 +750,6 @@ textarea {
     .text {
         background: #4b4b4b;
         color: #fff;
-        border-bottom-left-radius:.5rem;
-        border-top-left-radius: .5rem;
         flex: 2;
     }
     #html {background-color: darkolivegreen;}
@@ -754,12 +759,16 @@ textarea {
     #bootstrap {background-color:sienna;}
     #git {background-color:slateblue;}
     #html {background-color: darkolivegreen;}
-    .percentage {
-        font-size: .8rem;
+    
+    .progress-bar {
+        width: 0%;
+        flex: 5;
     }
     .progress-bg {
         background: #dbdbdb;
+        width: 0%;
     }
+    
     .global_wrapper {
         grid-template-columns: 1fr;
     }
@@ -1247,8 +1256,9 @@ var menu = document.getElementById('menuBar');
 var nav = document.getElementById('navbar');
 var barIcon = document.getElementById('bar');
 var header =  document.getElementById('theHeader');
-
-document.addEventListener('DOMContentLoaded',progress);
+var skill = document.getElementById('mySkill');
+            
+skill.addEventListener('click', progress);
 for(let i=0; i<article.length; i++) {
     article[i].addEventListener('mouseover', fun1);
 }
