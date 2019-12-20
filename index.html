@@ -883,17 +883,12 @@ textarea {
 
 
 /* ----------- Start Responsive Design -------------- */
+/* ----------- Start Responsive Design -------------- */
 
 @media screen and (max-width: 400px) {
-    .banner {
-        background: url('https://i.ibb.co/3kYqfFD/fabian-grohs-XMFZqr-Gy-V-Q-unsplash.jpg');
-        background-size:cover;
-        background-position: center;
-        
-}
-.bg-dark {
-    background:rgba(0,0,0,.7);
-}
+    .title .underline {
+        width: 40%;
+    }
     .top-header {
         padding: .5rem 0;
     }
@@ -912,7 +907,7 @@ textarea {
         justify-content: center;
         left: 0;
         top:4rem;
-        height: 0%;
+        height: 40%;
         overflow: hidden;
         transition: 0.4s;
         text-align: center;
@@ -931,7 +926,7 @@ textarea {
         display: block;
         margin-left: 6rem;
         margin-top: .6rem;
-        color: crimson;
+        color: #ff2753;
     }
     #bar .fa {
         font-size: 2rem;
@@ -940,15 +935,77 @@ textarea {
         padding: 0;
     }
     .banner h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .bg-dark {
         padding: 0;
+        background: rgba(0,0,0, 0.7);
     }
-    #about ,#project,#blog,#contact,#theFooter{
-        display: none;
+    
+    #about {
+        padding: 0 2rem;
+    }
+    #about .underline {
+        width: 50%;
+    }
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+    #card {
+        width: 100%;
+    }
+    .info {
+        width: 100%;
+        margin: 0 0 10% 0;
+        padding: 0;
+    }
+    .info img {
+        margin: 0 auto;
+    }
+    .info-contact {
+        margin-left: 25%;;
+        background: none;
+        color: crimson;
+        font-size: 1.3rem;
+    }
+    
+    
+    .pr-wrapper {
+        padding: 0 5% 10% 5% ;
+        float: left;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 4rem;
+    }
+    
+    .post {
+        grid-template-columns: 1fr;
+    }
+    .post-underline {
+        margin: .2rem 0; 
+    }
+    .logo div i {
+        font-size: .9rem;
+    }
+    
+    .logo a {
+        font-size: 1rem;
+    }
+    
+    .inputBox {
+        width: 80%;
+    }
+    
+    .social {
+         grid-template-columns: 3fr 3fr 3fr 3fr;
+    }
+    
+    .social div {
+        margin: 0 2rem;
+        width: 50%;
     }
 }
+
 
         </style>
         <script type="text/javascript"> 
