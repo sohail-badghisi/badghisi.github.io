@@ -943,23 +943,30 @@ textarea {
 
         </style>
         <script type="text/javascript"> 
-               var myInfo = document.getElementById('myInfo');
+              var myInfo = document.getElementById('myInfo');
 var percentage = document.getElementsByClassName('percentage');
 var article = document.getElementsByClassName('content');
-var closeBtn = document.getElementById('close');
-var menu = document.getElementById('menuBar');
-var nav = document.getElementById('navbar');
 var barIcon = document.getElementById('bar');
-var header =  document.getElementById('theHeader');
+var list = document.getElementsByClassName('list')[0];
 var skill = document.getElementById('mySkill');
-            
+
+barIcon.addEventListener('click', showList);
+function showList() {
+    if(list.style.height=='0%') {
+        list.style.height='40%';
+    }
+    else {
+        list.style.height='0%';
+    }
+}
+
 document.addEventListener('scroll', progress);
 
 for(let i=0; i<article.length; i++) {
     article[i].addEventListener('mouseover', fun1);
 }
 
-barIcon.addEventListener('click', showMenu);
+
 function fun1(e) {
     this.style.opacity='1';
     for(let i=0; i<article.length; i++) {
@@ -986,15 +993,29 @@ function progress() {
     }
 } 
 
-function showMenu() {
-    if( nav.style.height === '42%') {
-        nav.style.height='0%';
+
+
+
+let targets = document.querySelectorAll('.pro');
+var info = document.querySelector('.info');
+window.addEventListener("scroll", function(){
+  let doc = document.documentElement;
+  let top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+  
+  let windowHeight = window.innerHeight;
+  
+  for (i = 0; i < targets.length; ++i) {
+    let target = targets[i];
+    if(target.offsetTop < (top + (windowHeight/2))) {
+        target.classList.add("visible");
+        info.classList.add('info-visible');
     }
     else {
-        nav.style.height='42%';
+      target.classList.remove("visible");
+      info.classList.remove('info-visible');
     }
-}
-
+  }
+});
 
 
 
