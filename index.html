@@ -941,372 +941,62 @@ textarea {
 
 
 /* ----------- Start Responsive Design -------------- */
-@media screen and (max-width: 900px) {
-    .boxes {
-        grid-column-gap: 2rem;
-        padding-bottom: 3rem;
+@media screen and (max-width: 400px) {
+    .top-header {
+        padding: .5rem 0;
     }
-    .wrapper {
-        padding-bottom: 3rem;
-        grid-column-gap: 1rem;
+    #logo {
+        font-size: 1.7rem;
     }
-    .info {
-        width: 40%;
-        margin: 0 5%;
+    nav {
+        margin-left: 0;
     }
-    .global_wrapper {
-        grid-column-gap: 1rem;
-        grid-row-gap: 2rem;
+    .list {
+        position: absolute;
+        flex-direction: column;
+        background: #fff;
+        width: 100%;
+        position: absolute;
+        justify-content: center;
+        left: 0;
+        top:4rem;
+        height: 40%;
+        overflow: hidden;
+        transition: 0.4s;
+        text-align: center;
     }
-}
-
-
-@media screen and (max-width: 850px) {
-    .logo-wrapper {
-        
+    .list li:nth-child(1) {
+        background: none;
     }
-    .navbar-wrapper {
-       
+    .list a {
+        color: #4b4b4b;
+        font-size: 1.5rem;
+    }
+    .list li:nth-child(1) a {
+        color: var(--color-one);
     }
     #bar {
         display: block;
-        float: right;
-        margin: .3rem 2rem 0 1rem ;
-        font-size: 1.7rem;
-        color: white;
+        margin-left: 6rem;
+        margin-top: .6rem;
+        color: crimson;
     }
-    .height {
-        
-    }
-    #navbar {
-        position: absolute;
-        padding: 0;
-        margin: 0;
-        background: #fff;
-        right: 0%;
-        height: 0%;
-        overflow: hidden;
-        top:9.4%;
-        width: 30%;
-        transition: 0.4s;
-    }
-    #close {
-        display: none;
-    }
-    .list  {
-        padding: 1rem;
-        overflow: hidden;
-        text-align: center;
-        flex-direction: column;
-    }
-    .list a {
-        margin: 0;
-        padding: 0;
-        font-size: 1.2rem;
-    }
-    .list li {
-        margin: 1rem 0;
-    }
-    .boxes {
-        grid-column-gap: .1rem;
-    }
-    
-    .global_wrapper {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 3rem ;
-    }   
-}
-
-
-@media screen and (max-width: 700px) {
-    .bg-dark {
-        background: rgba(0,0,0,.5);
-        padding: 0 1rem;
-    }
-    #navbar {
-        width: 50%;
-    }
-    .boxes {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: .1rem;
-    }
-    .wrapper {
-        grid-template-columns: 1fr;
-        padding: 0;
-    }
-    #about {
-        padding: 0 2rem;
-    }
-    #card {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-    }
-    .info {
-        margin: 10% auto;
-        width: 70%;
-    }
-    .global_wrapper {
-        grid-template-columns: 1fr 1fr ;
-        grid-gap: 3rem 1rem; 
-    }
-    .inputBox {
-        margin: auto;
-        width: 75%;
-    }
-    .post {
-        display: grid;
-        padding: 1rem 2rem;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 1rem;
-        grid-row-gap: 3rem;
-    }
-    .social {
-        grid-template-columns: .5fr .5fr .5fr .5fr
-    }
-}
-
-
-
-@media screen and (max-width: 400px) {
-    
-    .title {
-        margin: 0;
-        padding: 2rem 0;
-    }
-    .title .underline {
-        width: 20%;
-        background: var(--color-one);
-    }
-    #about {
-        padding: 0;
-    }
-    .top-header {
-        padding: 0;
-    }
-    #bar_wrapper {
-        float: right;
-        
-        border-left: 1px solid #bebebe;
-    }
-    #bar {
-        color: var(--color-one);
-        margin: .5rem 1rem .6rem 1rem ;
-    }
-    #logo {
-        margin: .7rem 0 .6rem 1rem;
-        float: left;
-        font-family: monospace;
-    }
-    .navbar-wrapper  {
-        overflow: hidden;
-    }
-    #navbar {
-        top: 3.14rem;
-        width: 100%;
-        overflow: hidden;
-    }
-    .menu {
-        margin-bottom: 5rem;
-        padding: 0;
-        margin: 0;
-        background: #fff;
-    }
-    .list {
-        overflow: hidden;
-        margin: 2rem 0 0 0 ;
-        padding: 0;
-        background: #ffffff;
-    }
-    .list a {
-        font-size: 1.2rem;
-    }
-    .bg-dark {
-        background: rgba(0, 0, 0, .8);
-    }
-    #sohail {
-        font-family:lato; 
-        font-weight: 500;   
-        color: #ff5c7c;
-        text-shadow: .1rem .1rem .1rem rgba(0,0,0,3);
+    #bar .fa {
+        font-size: 2rem;
     }
     .banner {
-        background: url('https://cdn1.imggmi.com/uploads/2019/12/4/717366b3cf1386b1e9378edaa6c4f1d8-full.jpg');
-        background-size: cover;
-        background-position: center;
-    }
-    .banner a {
-        border: 1px solid var(--color-one);
-    }
-    .banner a:hover {
-        background: var(--color-one);
-    }
-    
-    .boxes {
-        grid-template-columns: 1fr;
         padding: 0;
     }
-    
-    .box .fa {
-        margin: 0;
-        font-size: 5rem;
-        background: none;
-        color: #888888;
+    .banner h1 {
+        font-size: 3rem;
+    }
+    .bg-dark {
         padding: 0;
     }
-    
-    .box h3 {
-        color: var(--color-one);
-        font-family: lato;
-        font-weight: bold;
-        margin: 0;
-    }
-    .box div {
-        padding-bottom: 0;
-    }
-    #myInfo {
-        padding-bottom: 5rem;
-    }
-    .info {
-        margin: 10%  auto 10% auto;
-        width: 70%;
-        background: #fff;
-        box-shadow: none;
-    }
-    .info img {
-        margin: 5% auto;
-        width: 80%;
-        border-radius: 50%;
-    }
-    .info span {
-        color: #3b3b3b;
-        font-size: 1.5rem;
-        margin: .5rem 0;
-    }
-    .info p {
-        color: var(--secondary-color-one);
-        font-size: .9rem;
-    }
-    .info-contact {
-        color: var(--secondary-color-two);
-    }
-    .progress {
-        width: 80%;
-        margin: 5% auto;
-    }
-    .text {
-        background: #000;
-        color: #fff;
-        flex: 2.2;
-        padding-top: .4rem;
-    }
-
-    .progress-bar {
-        width: 0%;
-        flex: 5;
-    }
-    .progress-bg {
-        background: #4b4b4b;
-        width: 0%;
-    }
-    
-    .global_wrapper {
-        grid-template-columns: 1fr;
-    }
-    .post {
-        grid-template-columns: 1fr;
-    }
-    #project {
-        background: #eee;;
-    }
-    .panel {
-        width: 80%;
-        margin: auto;
-        background:#fff;
-        box-shadow: none;
-        border:1px solid #eee;
-    }
-    .panel:nth-child(2),
-    .content:nth-child(2) {
+    #about ,#project,#blog,#contact,#theFooter{
         display: none;
     }
-    .flex b {
-        color: var(--color-one);
-        margin-top:.4rem;
-    }
-    .content h2{ 
-        font-size: 1.3rem;
-    }
-    .post-underline {
-        margin: .3rem 0;
-    }
-    .post p {
-        font-size: 1rem;
-        color: #808080;
-    }
-    .logo {
-        margin: 2rem 0;
-    }
-    .logo a {
-        background: #4b4b4b;
-        color: #fff;
-        padding: .5rem ;
-        font-size: .9rem;
-        border-radius: .1rem;
-        text-decoration: none;
-    }
-    .logo div {
-        display: inline;
-        margin-left: 1rem;
-    }
-    .logo div i {
-        font-size: .8rem;
-        margin: 0 .2rem;
-        color: #939292;
-    }
-    
-    .social div {
-        padding: .5rem .7rem ;
-        border-radius: 5%;
-    }
-    #contact {
-        background: #eee;
-    }
-    #contact .title span{
-        color: #4b4b4b;
-    }
-    #contact .underline {
-        background: var(--color-one);
-    }
-    #submit {
-        background: #4b4b4b;
-        color: #fff;
-    }
-    #goTop {
-        background: #4b4b4b;
-    }
-    #goTop a  {
-        background: #1c1c1c;
-    }
-    .social {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        padding-left: 1rem;
-        background: #4b4b4b;
-    }
-    .social div .fa{
-        color: #fff;
-    }
-    .copyRight {
-        border-top: 1px solid #eee;
-        padding-top: 2rem;
-        background: #4b4b4b;
-        font-size: .9rem;
-        padding-bottom:2rem;
-        margin:0;
-    }
 }
-
-
         </style>
         <script type="text/javascript"> 
                var myInfo = document.getElementById('myInfo');
