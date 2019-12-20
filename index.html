@@ -9,30 +9,29 @@
     <body>
         
          
+            
         <div id="home">
-            <header class="top-header fixed" id="theHeader">
-                <div class="logo-wrapper">
-                    <a href="#" id="logo">
-                        Sohail 
-                    </a>
-                </div>
-                <div class="navbar-wrapper">
-                    <div id="bar_wrapper">
-                        <a href="#" id="bar"><i class="fa fa-bars"></i></a>
-                    </div>
-                    <nav class="menu height" id="navbar">
-                        <ul class="list" id="menuBar">
-                            <li><a href="#" class="active">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
+            
             <section class="banner">
+                <header class="top-header">
+                <a href="#" id="logo">
+                    Sohail Badghisi
+                </a>
+                    
+                <nav class="navbar">
+                    <ul class="list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                    </ul>
+                </nav>
+                    
+                <a href="#" id="bar">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </header>
                 <div class="bg-dark">
-                    <h1>Hello,I am <span id="sohail">Sohail Amini</span>.</h1>
+                    <h1>Hello,I am <span id="sohail">Sohail Badghisi</span>.</h1>
                     <h1>A Front End Developer.</h1>
                     <div>
                         <a href="#">View my work 
@@ -43,6 +42,7 @@
             </section>
             
         </div><!-- End Home Section -->
+        
         
         <!--Start About Section -->
         <section id="about">
@@ -428,15 +428,16 @@
         </footer>
         <!--End Footer Section-->
         <style type="text/css">
-                                          :root {
+         :root {
     --color-one:crimson;
 }
+
 * {
     margin:0;
     padding:0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
+
 .title {
     padding: 3rem 0;
     text-align: center;
@@ -450,7 +451,44 @@
     width: 12%;
     margin: 1% auto;
     height: 3px;
-    background: #000000;;
+    background: var(--color-one);
+}
+.top-header {
+    background:#000;
+    display: flex;
+}
+#logo {
+    font-size: 1.8rem;
+    margin: .5rem 0 .5rem 2rem;
+    color: #ffff;
+    font-weight: 600;
+    text-decoration: none;
+}
+nav {
+    margin-left: 80vh;
+}
+.list {
+    display: flex;
+}
+.list li {
+    list-style: none;
+    margin: 0 2.5rem;
+    padding: 1rem ;
+    transition: 0.4s;
+}
+.list li:nth-child(1) {
+    background: crimson;
+}
+.list li:hover {
+    background: crimson;
+}
+.list li:nth-child(1) a {
+    color: #fff;
+}
+.list a {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
 }
 
 body {
@@ -460,61 +498,18 @@ body {
     color: #4b4b4b;
 }
 
-.top-header {
-    display:flex;
-    background: #eee;
-    float: left;
-    width: 100%;
-    padding: .8rem 0;
-}
-.top-header div {
-    flex:2.2;
-}
 
-
-#logo {
-    text-decoration:none;
-    color: #4b4b4b;
-    font-size:1.9rem;
-    font-family: monospace;
-    margin-left: 4rem;
-    font-weight: bold;
-}
-#logo .fa {
-    color: #000;
-    font-size: 1.7rem;
-}
-#close {
-    opacity: 0;
-}
-.list {
-    display: flex;
-    list-style: none;
-    margin-top: .6rem;
-}
-.list a {
-    transition: 0.4s;
-    color: #4b4b4b;
-    text-decoration:none;
-    margin: 0 1.7rem;
-    font-size:1.2rem;
-    transition: .4s;
-}
-.list .active,.list a:hover {
-    color: var(--primary-color-one);
-}
-#bar {
-    display: none;
-}
 .banner {
     float: left;
     width: 100%;
     height: 100vh;
-    background: url('https://i.ibb.co/V3k461P/mac.png');
+    background: url('laurenz-heymann-oeUioo29Q14-unsplash.jpg');
     background-size:cover;
     background-position: center;
+    font-family: calibri;
 }
 .bg-dark {
+    padding-top: 5rem;
     background:rgba(0,0,0,.4);
     display: flex;
     height: 100vh;
@@ -523,31 +518,36 @@ body {
     justify-content: center;
 }
 .banner h1 {
-    font-size:3rem;
+    font-size:3.6rem;
     color: #fff;
-    margin: .3rem 0;
+    margin: .1rem 0;
+    text-shadow: .1rem .1rem .5rem rgba(0,0,0,2);
 }
 #sohail {
-    color: #77ceea;
+    color: #ff345d;
+    font-weight: normal;
 }
 .banner h1:nth-child(2) {
     margin-bottom: 1.2rem;
 }
 
-.banner a {
+.bg-dark > div {
+    margin-top: .1rem;
+}
+.bg-dark a {
     font-size: 1.4rem;
     background: transparent;
     color: #fff;
-    border:2px solid #3996b4;
+    border:2px solid crimson;
     padding: .5rem .8rem;
     text-decoration: none;
     transition: .6s;
     margin-right:  .5rem;
     border-radius:.1rem;
 }
-            .banner a:hover {
-                background: #3996b4;
-            }
+.bg-dark a:hover {
+    background: crimson;
+}
             
 .banner a .fa {
     font-size: 1rem;
@@ -568,51 +568,6 @@ body {
     transition: 5s;
 }
 
-.boxes {
-    float: left;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-column-gap: 3rem;
-    padding-bottom: 3rem;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    position: relative;
-}
-.box {
-    border-radius: .2rem;
-    padding: 1rem;
-    text-align:center;
-    transition: 0.2s ease-in;
-}
-.box:hover {
-    background: #f5f5f5;
-}
-.box > div {
-    margin: auto;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: .1%;
-}
-.box .fa {
-    background: var(--primary-color-one);
-    color: #fff;
-    font-size: 2.6rem;
-    padding: 1rem 1rem;
-    border-radius: 50%;
-}
-.box h3 {
-    text-align: center;
-    margin-bottom: .5rem;
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: #272727;
-}
-.box p {
-    text-align: center;
-    line-height: 1.4;
-}
 
 .wrapper {
     padding-bottom: 3rem;
@@ -626,7 +581,7 @@ body {
     width: 90%;
 }
 .info {
-    width: 100%;
+    
     margin: 0 5%;
     transition: .6s ease;
     overflow: hidden;
@@ -634,7 +589,9 @@ body {
     display: flex;
     flex-direction: column;
     text-align:center;
-   
+}
+.info-visible {
+    
 }
 .info img {
     width: 200px;
@@ -653,13 +610,17 @@ body {
     color: #4b4b4b;
     line-height: 1.6;
 }
-
+.info > div {
+    margin-top: 1rem;
+}
 .info-contact {
-    font-size: 1.3rem;
-    margin: 1rem 0;
     text-align: center;
-    width: 100%;
-    color: #000;
+    text-decoration: none;
+    background: var(--color-one);
+    color: #fff;
+    padding: .5rem 2rem;
+    float: left;
+    margin-left: 33%;; 
 }
 
 .skill {
@@ -675,7 +636,7 @@ body {
 .text {
     font-size: .8rem;
     font-weight: 400;
-    background: var(--primary-color-one);
+    background-color: #3f4052;
     flex: 1.6;
     padding: .3rem .5rem;
     text-align: center;
@@ -686,7 +647,7 @@ body {
     flex:4;
 }
 .progress-bg {
-    background: #56a4be;
+    background: #80839b;
     height: 100%;
     transition: 2s ease-in;
     width: 0%;
@@ -694,7 +655,7 @@ body {
 .percentage {
     flex: 1;
     font-size: .8rem;
-    padding: .3rem 0;
+    padding: .2rem 0;
     font-size: 1rem;
     text-align: center;
 }
@@ -704,77 +665,63 @@ body {
 /* ------------Start Project Section------------ */
 #project {
     float: left;
-    background: #faf9f9;
+    background: #eee;
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    padding: 0 5% 5% 5% ;
-}
-.global_wrapper {
-    float: left;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 5rem 2rem; 
-}
-.panel img {
-    width: 100%;
-    height: 30vh;
-}
-.panel {
-    background: white;
-    transition: 0.4s ease-out;
-    opacity: .9;
-    box-shadow: .1rem .1rem .4rem rgba(145, 145, 145, 0.6);
-}
-.panel:hover {
-    opacity: 1;
-}
-.inner {
-    padding: 1rem 1rem;
-}
-.inner div p{
-    margin: .5rem 0;
-    font-size: .9rem;
-    color: #acacac;
-}
-.flex {
-    display: flex;
-    padding: .5rem 0;
-}
-.flex div {
-    flex: 1;
+    background-size: cover;
 }
 
-.flex div b {
-    font-size: 1.2rem; 
-    font-weight: bolder;
+.pr-wrapper {
+    padding: 0 5% 10% 5% ;
+    float: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
 }
-.flex div span {
-    color: #969696;
-    font-size: .8rem;
-    margin-left: .3rem;
+.pro img {
+    height: 13vh;;
 }
-.flex div:nth-child(2) {
-    display: flex;
+.inner {
+    margin: 1rem;
+    padding-bottom: .5rem;
 }
-.btn {
-    cursor: pointer;
-    border:.5px solid #cccccc;
-    background: transparent;
-    padding: .5rem .7rem;
-    font-size: 1rem;
-    margin: 0 .1rem;
-    transition: 0.4s ease-out;
+.inner h3 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
 }
-.btn-preview:hover {
-    border-color: transparent;
-    background: #3996b4;
+.inner b {
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: #505269;
+}
+.inner .buttons {
+    margin: 1rem 0;
+}
+.buttons a {
+    background: var(--color-one);
     color: #fff;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    border-radius: .2rem;
 }
-.btn-buy {
-    background: #3996b4;
-    border: none;
-    color: #fff;
+.pro {
+    background: white;
+    opacity: 0;
+    transition: 1s ease-in;
 }
+
+.visible {
+    opacity: 1;
+    width: 100%;
+    transition: 1s ease-out;
+}
+
+.pro img {
+    width: 100%;
+    height: 25vh;
+}
+
 /* ------------End Project Section------------ */
 
 #blog {
@@ -807,7 +754,7 @@ body {
     margin: .7rem 0;
 }
 .logo a {
-    color: var(--primary-color);
+    color: var(--color-one);
     font-size: 1.2rem;
 }
 .logo div {
@@ -824,17 +771,17 @@ body {
 
 /* -----------Start Contact Section----------- */
 #contact {
-    background-color: #3c879f;
+    background-color: #eee;
     float: left;
     width: 100%;
     padding-bottom: 10vh;
 }
 
 #contact .title span {
-    color: #fff;
+    color: 
 }
 #contact .underline {
-    background: var(--primary-color-one);
+    background: #4b4b4b;
 } 
 .inputBox {
     margin: auto;
@@ -868,25 +815,23 @@ textarea {
 }
 #submit {
     float: right;
-    color: #14194e;
+    color: #fff;
     font-weight: 400;
-    border:1px solid #fff;
     border-radius: .2rem;
     text-decoration: none;
+    background: var(--color-one);
     padding: .5rem 2rem;
     margin-top: 1rem;
     transition: 0.5s;
 }
 #submit:hover {
-    background: var(--primary-color-one);
-    border:1px solid var(--primary-color-one);
-    color: #fff;
+    background: #e81741;
 }
 /* -----------End Contact Section----------- */
 
 /* -----------Start Footer Section----------- */
 #theFooter {
-    background: var(--primar-color-one);;
+    background:#505269;;
     float: left;
     width: 100%;
 }
@@ -895,14 +840,11 @@ textarea {
     width: 100%;
     text-align: center;
 }
-#goTop :hover {
-    background: var(--primary-color-one);
-    color: #fff;
-}
+
 #topSign {
     padding: 1rem;
-    background: #464646;
-    color: white;
+    background: crimson;
+    color: #fff;
     transition: 0.5s ease;
 }
 .social {
@@ -914,17 +856,17 @@ textarea {
     text-align: center;
 }
 .social div {
-    width: 50%;
+    background: #fff;
     cursor: pointer;
-    color: #343434;
+    color: #505269;;
     margin: 0 1rem;
     padding: .8rem 0;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     transition: 0.4s;
+    width: 40%;
+    border-radius: .2rem;
 }
-.social div:hover {
-    color:#4b4b4b;
-}
+
 .copyRight {
     color: #a3a3a3;
     letter-spacing: .1rem;
@@ -941,6 +883,7 @@ textarea {
 
 
 /* ----------- Start Responsive Design -------------- */
+
 @media screen and (max-width: 400px) {
     .top-header {
         padding: .5rem 0;
@@ -997,6 +940,7 @@ textarea {
         display: none;
     }
 }
+
         </style>
         <script type="text/javascript"> 
                var myInfo = document.getElementById('myInfo');
