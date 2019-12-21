@@ -525,33 +525,32 @@ body {
     margin: 1rem 0;
     display: flex;
     font-size: 1rem;
-    border-radius:  .3rem;
 }
 .text {
-    font-size: .7rem;
+    font-size: 1rem;
     font-weight: 400;
     background-color: #292828;
     flex: 1.8;
-    padding: .2rem .5rem;
+    padding: .3rem .5rem;
     text-align: center;
     color: #fff;
     text-transform: uppercase;
-    border-radius: .3rem 0 0 .3rem;
+
 }
 .progress-bar {
     flex:4;
     
 }
 .progress-bg {
-    background: #727171;
+    background: #464646;
     height: 100%;
     transition: 2s ease-in;
     width: 0%;
 }
 .percentage {
     flex: 1;
-    font-size: .8rem;
-    padding: .1rem 0;
+    font-size: 1rem;
+    padding: .4rem 0;
     text-align: center;
     border-radius: 0 .3rem .3rem 0;
 }
@@ -810,9 +809,6 @@ textarea {
         transition: 0.4s;
         text-align: center;
     }
-    .addHeight {
-        height: 80%;
-    }
     .list li:nth-child(1) {
         background: none;
     }
@@ -929,13 +925,14 @@ var skill = document.getElementById('mySkill');
 var myList = document.getElementById('myList');
 barIcon.addEventListener('click', showList);
 function showList() {
-    if(list.style.height == '0%') {
-        list.style.height == '80%'
+    if(list.style.height=='0%') {
+        list.style.height='80%';
     }
     else {
-        list.style.height == '0%'
+        list.style.height='0%';
     }
 }
+
 
 document.addEventListener('scroll', progress);
 
