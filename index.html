@@ -929,7 +929,12 @@ var skill = document.getElementById('mySkill');
 var myList = document.getElementById('myList');
 barIcon.addEventListener('click', showList);
 function showList() {
-    myList.classList.toggle('addHeight');
+    if(list.style.height == '0%') {
+        list.style.height == '80%'
+    }
+    else {
+        list.style.height == '0%'
+    }
 }
 
 document.addEventListener('scroll', progress);
