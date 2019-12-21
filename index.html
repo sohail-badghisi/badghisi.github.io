@@ -529,7 +529,7 @@ body {
 .text {
     font-size: .8rem;
     font-weight: 400;
-    background-color: #3f4052;
+     background-color: #292828;
     flex: 1.6;
     padding: .3rem .5rem;
     text-align: center;
@@ -540,7 +540,7 @@ body {
     flex:4;
 }
 .progress-bg {
-    background: #80839b;
+     background: #727171;
     height: 100%;
     transition: 2s ease-in;
     width: 0%;
@@ -775,6 +775,7 @@ textarea {
 /* -----------End Footer Section----------- */
 
 
+
 /* ----------- Start Responsive Design -------------- */
 
 @media screen and (max-width: 400px) {
@@ -804,6 +805,9 @@ textarea {
         transition: 0.4s;
         text-align: center;
     }
+    .addHeight {
+        height: 80%;
+    }
     .list li:nth-child(1) {
         background: none;
     }
@@ -827,11 +831,11 @@ textarea {
         padding: 0;
     }
     .banner h1 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
     .bg-dark {
         padding: 0;
-        background: rgba(0,0,0, 0.7);
+        background: rgba(0,0,0, 0.5);
     }
     
     #about {
@@ -863,11 +867,11 @@ textarea {
     
     
     .pr-wrapper {
-        padding: 0 5% 10% 5% ;
+        padding: 0 2rem 5rem 2rem;
         float: left;
         display: grid;
         grid-template-columns: 1fr ;
-        grid-gap: 4rem;
+        grid-gap: 4rem 2rem;
     }
     
     .post {
@@ -887,9 +891,11 @@ textarea {
     .inputBox {
         width: 80%;
     }
-    
+    #goTop {
+        display: none;
+    }
     .social {
-         grid-template-columns: 3fr 3fr 2fr 2fr;
+         grid-template-columns: 3fr 3fr 3fr 3fr;
     }
     
     .social div {
