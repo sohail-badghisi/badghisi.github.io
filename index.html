@@ -917,21 +917,19 @@ textarea {
 
    </style>
         <script type="text/javascript">
-            var myInfo = document.getElementById('myInfo');
+          var myInfo = document.getElementById('myInfo');
 var percentage = document.getElementsByClassName('percentage');
 var article = document.getElementsByClassName('content');
 var barIcon = document.getElementById('bar');
 var list = document.getElementsByClassName('list')[0];
 var skill = document.getElementById('mySkill');
 
+
+var myList = document.getElementById('myList');
+
 barIcon.addEventListener('click', showList);
 function showList() {
-    if(list.style.height=='0%') {
-        list.style.height='40%';
-    }
-    else {
-        list.style.height='0%';
-    }
+    myList.classList.toggle('addHeight');
 }
 
 document.addEventListener('scroll', progress);
@@ -990,6 +988,8 @@ window.addEventListener("scroll", function(){
     }
   }
 });
+
+
 
         </script>
         
