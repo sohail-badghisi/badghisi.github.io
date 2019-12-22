@@ -4,17 +4,14 @@
         <title>Sohail Badghisi</title> 
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-        
     </head>
     <body>
         
          
         <div id="home">
-            
-            <section class="banner">
-                <header class="top-header">
+              <header class="top-header">
                 <a href="#" id="logo">
-                    Sohail Badghisi
+                    <span><i class="fa fa-code"></i></span> Badghisi
                 </a>
                     
                 <nav class="navbar">
@@ -29,6 +26,7 @@
                     <i class="fa fa-bars"></i>
                 </a>
             </header>
+            <section class="banner">
                 <div class="bg-dark">
                     <h1>Hello,I am <span id="sohail">Sohail Badghisi</span>.</h1>
                     <h1>A Front End Developer.</h1>
@@ -146,7 +144,8 @@
                         <h3>Book Cafe</h3>
                         <b>Free</b>
                         <div class="buttons">
-                            <a href="#" class="btn">Download</a>
+                            <a href="#" class="btn download"><i class="fa fa-download"></i></a>
+                            <a href="#" class="btn buy"><i class="fa fa-shopping-cart"></i></a>
                         </div>
                     </div>
                 </div>
@@ -157,7 +156,8 @@
                         <h3>Book Cafe</h3>
                         <b>Free</b>
                         <div class="buttons">
-                            <a href="#" class="btn">Download</a>
+                            <a href="#" class="btn download"><i class="fa fa-download"></i></a>
+                            <a href="#" class="btn buy"><i class="fa fa-shopping-cart"></i></a>
                         </div>
                     </div>
                 </div>
@@ -168,7 +168,8 @@
                         <h3>Book Cafe</h3>
                         <b>Free</b>
                         <div class="buttons">
-                            <a href="#" class="btn">Download</a>
+                            <a href="#" class="btn download"><i class="fa fa-download"></i></a>
+                            <a href="#" class="btn buy"><i class="fa fa-shopping-cart"></i></a>
                         </div>
                     </div>
                 </div>
@@ -179,7 +180,32 @@
                         <h3>Book Cafe</h3>
                         <b>Free</b>
                         <div class="buttons">
-                            <a href="#" class="btn">Download</a>
+                            <a href="#" class="btn download"><i class="fa fa-download"></i></a>
+                            <a href="#" class="btn buy"><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pro">
+                    <img src="https://i.ibb.co/ryDv9SR/web3.jpg" class="image"/>
+                    <div class="inner">
+                        <h3>Book Cafe</h3>
+                        <b>Free</b>
+                        <div class="buttons">
+                            <a href="#" class="btn download"><i class="fa fa-download"></i></a>
+                            <a href="#" class="btn buy"><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pro">
+                    <img src="https://i.ibb.co/ryDv9SR/web3.jpg" class="image"/>
+                    <div class="inner">
+                        <h3>Book Cafe</h3>
+                        <b>Free</b>
+                        <div class="buttons">
+                            <a href="#" class="btn download"><i class="fa fa-download"></i></a>
+                            <a href="#" class="btn buy"><i class="fa fa-shopping-cart"></i></a>
                         </div>
                     </div>
                 </div>
@@ -318,9 +344,85 @@
              </section>
         </footer>
         <!--End Footer Section-->
+    
+          <script type="application/javascript">
+              
+              var myInfo = document.getElementById('myInfo');
+var percentage = document.getElementsByClassName('percentage');
+var article = document.getElementsByClassName('content');
+var barIcon = document.getElementById('bar');
+var list = document.getElementsByClassName('list')[0];
+var skill = document.getElementById('mySkill');
+
+barIcon.addEventListener('click', showList);
+function showList() {
+    list.classList.toggle('addHeight');
+}
+
+document.addEventListener('scroll', progress);
+
+for(let i=0; i<article.length; i++) {
+    article[i].addEventListener('mouseover', fun1);
+}
+
+
+function fun1(e) {
+    this.style.opacity='1';
+    for(let i=0; i<article.length; i++) {
+        article[i].style.opacity='0.5';
+        article[i].style.transition='0.4s ease';
+        if(article[i]===this) {
+            this.style.opacity='1';
+            this.style.transition='0.4s ease';
+        }
+    }
+}
+
+function progress() {
+    document.getElementsByClassName('progress-bg')[0].style.width='95%';
+    document.getElementsByClassName('progress-bg')[1].style.width='95%';
+    document.getElementsByClassName('progress-bg')[2].style.width='80%';
+    document.getElementsByClassName('progress-bg')[3].style.width='75%';
+    document.getElementsByClassName('progress-bg')[4].style.width='55%';
+    document.getElementsByClassName('progress-bg')[5].style.width='85%';
+    document.getElementsByClassName('progress-bg')[6].style.width='80%';
+    document.getElementsByClassName('progress-bg')[7].style.width='90%';
+    for(let i = 0; i<percentage.length; i++) {
+        percentage[i].style.opacity='1';
+    }
+} 
+
+
+
+
+let targets = document.querySelectorAll('.pro');
+var info = document.querySelector('.info');
+window.addEventListener("scroll", function(){
+  let doc = document.documentElement;
+  let top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+  
+  let windowHeight = window.innerHeight;
+  
+  for (i = 0; i < targets.length; ++i) {
+    let target = targets[i];
+    if(target.offsetTop < (top + (windowHeight/2))) {
+        target.classList.add("visible");
+        info.classList.add('info-visible');
+    }
+    else {
+      target.classList.remove("visible");
+      info.classList.remove('info-visible');
+    }
+  }
+});
+
+
+
+              
+        </script>
         <style type="text/css">
-        :root {
-    --color-one:crimson;
+            :root {
+    --color-one:#53cb53;
 }
 
 * {
@@ -344,47 +446,6 @@
     height: 3px;
     background: var(--color-one);
 }
-.top-header {
-    background:#292828;
-    display: flex;
-}
-#logo {
-    font-size: 1.8rem;
-    margin: .5rem 0 .5rem 2rem;
-    color: #ffff;
-    font-weight: 600;
-    text-decoration: none;
-}
-#bar {
-    display: none;
-}
-nav {
-    margin-left: 80vh;
-}
-.list {
-    display: flex;
-}
-.list li {
-    list-style: none;
-    margin: 0 2.5rem;
-    padding: 1rem ;
-    transition: 0.4s;
-}
-.list li:nth-child(1) {
-    background: crimson;
-}
-.list li:hover {
-    background: crimson;
-}
-.list li:nth-child(1) a {
-    color: #fff;
-}
-.list a {
-    font-size: 1.2rem;
-    color: white;
-    text-decoration: none;
-}
-
 body {
     transition: 0.5s ease;
     background: #ffffff;
@@ -392,19 +453,68 @@ body {
     color: #4b4b4b;
 }
 
+.top-header {
+    display: flex;
+    background:#fff;
+    padding-top: .4rem;
+    float: left;
+}
+#logo {
+    font-size: 1.8rem;
+    margin: .5rem 0 .5rem 2rem;
+    color: #4d4b4b;
+    font-weight: 600;
+    text-decoration: none;
+}
+#logo .fa-code {
+    color: var(--color-one);
+}
+#bar {
+    display: none;
+}
+nav {
+    margin-left: 70vh;
+}
+.list {
+    display: flex;
+}
+.list li {
+    list-style: none;
+    margin: 0 2.1rem;
+    padding: 1rem ;
+    transition: 0.4s;
+}
+.list li a {
+    padding-bottom: .5rem;
+    color: #4b4b4b;
+    transition: .3s;
+}
+.list li:hover {
+ 
+}
+.list li:nth-child(1) a, .list li a:hover {
+    color: #a09e9e;
+}
+.list li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
 
 .banner {
     float: left;
     width: 100%;
     height: 100vh;
-    background: url('https://i.ibb.co/6mgCWNP/laurenz-heymann-oe-Uioo29-Q14-unsplash.jpg');
+    float: left;
+    width: 100%;
+    background: url('https://i.ibb.co/FDdrbqY/clement-h-544786-unsplash.jpg');
     background-size:cover;
     background-position: center;
     font-family: calibri;
 }
 .bg-dark {
     padding-top: 5rem;
-    background:rgba(0,0,0,.6);
+    background:rgba(0,0,0,.8);
     display: flex;
     height: 100vh;
     flex-direction: column;
@@ -418,7 +528,6 @@ body {
     text-shadow: .1rem .1rem .5rem rgba(0,0,0,2);
 }
 #sohail {
-    color: #ff345d;
     font-weight: normal;
 }
 .banner h1:nth-child(2) {
@@ -432,7 +541,7 @@ body {
     font-size: 1.4rem;
     background: transparent;
     color: #fff;
-    border:2px solid crimson;
+    border:2px solid var(--color-one);
     padding: .5rem .8rem;
     text-decoration: none;
     transition: .6s;
@@ -440,7 +549,7 @@ body {
     border-radius:.1rem;
 }
 .bg-dark a:hover {
-    background: crimson;
+    background: var(--color-one);
 }
             
 .banner a .fa {
@@ -585,23 +694,29 @@ body {
     padding-bottom: .5rem;
 }
 .inner h3 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin-bottom: .5rem;
 }
 .inner b {
     font-size: 1.2rem;
-    font-weight: 100;
-    color: #505269;
+    color: #b9b9b9;
 }
 .inner .buttons {
-    margin: 1rem 0;
-}
-.buttons a {
-    background: var(--color-one);
-    color: #fff;
+    margin-top: .5rem;
+    padding: 1rem 0 0 0 ;}
+.buttons .btn  {
+    color: #4b4b4b;
     padding: .5rem 1rem;
     text-decoration: none;
     border-radius: .2rem;
+}
+.buttons .download {
+    border:1px solid #4b4b4b;
+    margin-right: .3rem;
+}
+.buttons .buy {
+    background: var(--color-one);
+    color: #fff;
 }
 .pro {
     background: white;
@@ -741,7 +856,7 @@ textarea {
 
 #topSign {
     padding: 1rem;
-    background: crimson;
+    background: var(--color-one);
     color: #fff;
     transition: 0.5s ease;
 }
@@ -764,7 +879,9 @@ textarea {
     width: 40%;
     border-radius: .2rem;
 }
-
+.social div i {
+    color: #1da21d;
+}
 .copyRight {
     color: #a3a3a3;
     letter-spacing: .1rem;
@@ -798,7 +915,7 @@ textarea {
     .list {
         position: absolute;
         flex-direction: column;
-        background: #fff;
+        background: #f7f5f5;
         width: 100%;
         position: absolute;
         justify-content: center;
@@ -808,6 +925,9 @@ textarea {
         overflow: hidden;
         transition: 0.4s;
         text-align: center;
+    }
+    .addHeight {
+        height: 70%;
     }
     .list li:nth-child(1) {
         background: none;
@@ -821,9 +941,9 @@ textarea {
     }
     #bar {
         display: block;
-        margin-left: 6rem;
+        margin-left: 8rem;
         margin-top: .6rem;
-        color: #ff2753;
+        color: var(--color-one);
     }
     #bar .fa {
         font-size: 2rem;
@@ -860,13 +980,24 @@ textarea {
         margin: 0 auto;
     }
     .info-contact {
-        margin-left: 25%;;
+        margin-left: 24%;;
         background: none;
-        color: crimson;
-        font-size: 1.3rem;
+        color: var(--color-one);
+        font-size: 1.2rem;
     }
-    
-    
+    .text {
+        padding: .4rem;
+        font-size: .9rem;
+        flex: 2.3;
+    }
+    .progress {
+        font-size: 1rem;
+        margin:.8rem 0;
+    }
+    .percentage {
+        padding: .4rem;
+        font-size: .9rem;
+    }
     .pr-wrapper {
         padding: 0 2rem 5rem 2rem;
         float: left;
@@ -907,94 +1038,8 @@ textarea {
 
 
 
-
-
-
-
-
-
-   </style>
-        
-        <script type="text/javascript">
-          var myInfo = document.getElementById('myInfo');
-var percentage = document.getElementsByClassName('percentage');
-var article = document.getElementsByClassName('content');
-var barIcon = document.getElementById('bar');
-var list = document.getElementsByClassName('list')[0];
-var skill = document.getElementById('mySkill');
-var myList = document.getElementById('myList');
-barIcon.addEventListener('click', showList);
-function showList() {
-    if(list.style.height=='0%') {
-        list.style.height='80%';
-    }
-    else {
-        list.style.height='0%';
-    }
-}
-
-
-document.addEventListener('scroll', progress);
-
-for(let i=0; i<article.length; i++) {
-    article[i].addEventListener('mouseover', fun1);
-}
-
-
-function fun1(e) {
-    this.style.opacity='1';
-    for(let i=0; i<article.length; i++) {
-        article[i].style.opacity='0.5';
-        article[i].style.transition='0.4s ease';
-        if(article[i]===this) {
-            this.style.opacity='1';
-            this.style.transition='0.4s ease';
-        }
-    }
-}
-
-function progress() {
-    document.getElementsByClassName('progress-bg')[0].style.width='95%';
-    document.getElementsByClassName('progress-bg')[1].style.width='95%';
-    document.getElementsByClassName('progress-bg')[2].style.width='80%';
-    document.getElementsByClassName('progress-bg')[3].style.width='75%';
-    document.getElementsByClassName('progress-bg')[4].style.width='55%';
-    document.getElementsByClassName('progress-bg')[5].style.width='85%';
-    document.getElementsByClassName('progress-bg')[6].style.width='80%';
-    document.getElementsByClassName('progress-bg')[7].style.width='90%';
-    for(let i = 0; i<percentage.length; i++) {
-        percentage[i].style.opacity='1';
-    }
-} 
-
-
-
-
-let targets = document.querySelectorAll('.pro');
-var info = document.querySelector('.info');
-window.addEventListener("scroll", function(){
-  let doc = document.documentElement;
-  let top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
-  
-  let windowHeight = window.innerHeight;
-  
-  for (i = 0; i < targets.length; ++i) {
-    let target = targets[i];
-    if(target.offsetTop < (top + (windowHeight/2))) {
-        target.classList.add("visible");
-        info.classList.add('info-visible');
-    }
-    else {
-      target.classList.remove("visible");
-      info.classList.remove('info-visible');
-    }
-  }
-});
-
-
-
-        </script>
-        
+        </style>
+      
     </body>
 </html>
 
