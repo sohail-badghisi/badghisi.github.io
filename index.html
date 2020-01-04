@@ -4,1045 +4,463 @@
         <title>Sohail Badghisi</title> 
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
         
          
+        
         <div id="home">
-              <header class="top-header">
-                  <div> 
+            <header id="top-header">
+                <div id="logo-wrapper">
                     <a href="#" id="logo">
-                        <span><i class="fa fa-code"></i></span> Badghisi
+                        <i class="fa fa-code"></i>
+                        Badghisi
                     </a>
-                    </div>
-                  <div> 
-                    <nav class="navbar">
-                        <ul class="list">
-                            <li><a href="#">Home</a></li>
+                </div>
+                <div id="menu">
+                    <nav>
+                        <ul class="list" id="menubar">
+                            <li><a href="#" class="active">Home</a></li>
                             <li><a href="#">About</a></li>
-                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Project</a></li>
                         </ul>
                     </nav>
-                     </div>
-                    
-                <a href="#" id="bar">
-                    <i class="fa fa-bars"></i>
-                </a>
+                    <a href="#" id="bar">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
             </header>
             <section class="banner">
                 <div class="bg-dark">
-                    <h1>Hello,I am <span id="sohail">Sohail Badghisi</span>.</h1>
-                    <h1>A Front End Developer.</h1>
-                    <div>
-                        <a href="#">View my work 
-                            <i class="fa fa-arrow-down"></i>
-                        </a>
-                    </div>
+                    <h2>I am Sohail Badghisi</h2>
+                    <h4>A front end developer</h4>
+                    <a href="#" class="btn btn-lg">My Projects 
+                        <i class="fa fa-angle-down"></i>
+                    </a>
                 </div>
             </section>
-            
-        </div><!-- End Home Section -->
+        </div>
+        <!--End Home Section-->
         
-        <!--Start About Section -->
-        <section id="about">
+        
+        
+        <!--Start About -->
+        <div id="about-wrapper">
             
-            <header class="title">
-                <span>About</span>
+            <div class="title">
+                <h2>About</h2>
                 <div class="underline"></div>
-            </header>
-          
-            <section class="wrapper" id="myInfo">
-                <div id="card">
-                    <div class="info ">
-                       <img src="https://i.ibb.co/r5gmY14/sohail.jpg"/>
-                        <span class="info-title">Who is this guy?</span>
-                        <p>
-                            I'm the Front-End Developer for EyeCue Lab in Portland, 
-                            OR.
-                            I have serious passion for UI effects,
-                            animations and creating intuitive,
-                            dynamic user experiences
-                        </p>
-                        <div>
-                            <a href="#" class="info-contact">Let's build</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill" id="mySkill">
-                    <div class="progress" style="margin-top: 0;">
-                        <div class="text" id="html">Html</div>
-                        <div class="progress-bar" >
-                            <div id='a' class="progress-bg"></div>
-                        </div>
-                        <div class="percentage">95%</div>
-                    </div>
-                    <div class="progress">
-                        <div class="text" id="css">Css</div>
-                        <div class="progress-bar">
-                            <div class="progress-bg"></div>
-                        </div>
-                        <div class="percentage">95%</div>
-                    </div>
-                    <div class="progress">
-                        <div class="text" id="js">Javascript</div>
-                        <div class="progress-bar">
-                            <div class="progress-bg"></div>
-                        </div>
-                        <div class="percentage">80%</div>
-                    </div>
-                    <div class="progress">
-                        <div class="text" id="scss">Scss</div>
-                        <div class="progress-bar">
-                            <div class="progress-bg"></div>
-                        </div>
-                        <div class="percentage">85%</div>
-                    </div>
-                    <div class="progress">
-                        <div class="text" id="jquery">Jquery</div>
-                        <div class="progress-bar">
-                            <div class="progress-bg"></div>
-                        </div>
-                        <div class="percentage">65%</div>
-                    </div>
-                    <div class="progress">
-                        <div class="text" id="bootstrap">Bootstrap</div>
-                        <div class="progress-bar">
-                            <div class="progress-bg"></div>
-                        </div>
-                        <div class="percentage">55%</div>
-                    </div>
-                    <div class="progress">
-                        <div class="text" id="git">Git</div>
-                        <div class="progress-bar">
-                            <div class="progress-bg"></div>
-                        </div>
-                        <div class="percentage">75%</div>
-                    </div>
-                    <div class="progress">
-                        <div class="text" id="novel">Novel</div>
-                        <div class="progress-bar">
-                            <div class="progress-bg"></div>
-                        </div>
-                        <div class="percentage">90%</div>
-                    </div>
-                </div>
-            </section>
-            
-        </section>
-        <!--End About Section-->
-              
-        <!--Start Project Section-->
-        <section id="project"> 
-            
-            <header class="title">
-                <span>Projects</span>
-                <div class="underline"></div>
-            </header>
-            
-            <div class="pr-wrapper">
-                
-                <div class="pro">
-                    <img src="https://i.ibb.co/ryDv9SR/web3.jpg" class="image"/>
-                    <div class="inner">
-                        <h3>Book Cafe</h3>
-                        <b>Free</b>
-                        <div class="buttons">
-                            <a href="#" class="btn download"><i class="fa fa-download"></i></a>
-                            <a href="#" class="btn buy"><i class="fa fa-shopping-cart"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="pro">
-                    <img src="https://i.ibb.co/ryDv9SR/web3.jpg" class="image"/>
-                    <div class="inner">
-                        <h3>Book Cafe</h3>
-                        <b>Free</b>
-                        <div class="buttons">
-                            <a href="#" class="btn download"><i class="fa fa-download"></i></a>
-                            <a href="#" class="btn buy"><i class="fa fa-shopping-cart"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="pro">
-                    <img src="https://i.ibb.co/ryDv9SR/web3.jpg" class="image"/>
-                    <div class="inner">
-                        <h3>Book Cafe</h3>
-                        <b>Free</b>
-                        <div class="buttons">
-                            <a href="#" class="btn download"><i class="fa fa-download"></i></a>
-                            <a href="#" class="btn buy"><i class="fa fa-shopping-cart"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="pro">
-                    <img src="https://i.ibb.co/ryDv9SR/web3.jpg" class="image"/>
-                    <div class="inner">
-                        <h3>Book Cafe</h3>
-                        <b>Free</b>
-                        <div class="buttons">
-                            <a href="#" class="btn download"><i class="fa fa-download"></i></a>
-                            <a href="#" class="btn buy"><i class="fa fa-shopping-cart"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="pro">
-                    <img src="https://i.ibb.co/ryDv9SR/web3.jpg" class="image"/>
-                    <div class="inner">
-                        <h3>Book Cafe</h3>
-                        <b>Free</b>
-                        <div class="buttons">
-                            <a href="#" class="btn download"><i class="fa fa-download"></i></a>
-                            <a href="#" class="btn buy"><i class="fa fa-shopping-cart"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="pro">
-                    <img src="https://i.ibb.co/ryDv9SR/web3.jpg" class="image"/>
-                    <div class="inner">
-                        <h3>Book Cafe</h3>
-                        <b>Free</b>
-                        <div class="buttons">
-                            <a href="#" class="btn download"><i class="fa fa-download"></i></a>
-                            <a href="#" class="btn buy"><i class="fa fa-shopping-cart"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                
             </div>
             
-           
-        </section>
-        <!--End Project Section-->
-        
-        
-        
-        <!--Start Blog Section -->
-        <section id="blog">
-            <header class="title">
-                <span>Blog</span>
-                <div class="underline"></div>
-            </header>
-            <section class="post">
-                <article class="content">
-                    <h2>The power of Javascript!</h2>
-                    <div class="post-underline"></div>
-                    <p>
-                        generator
-                        Reference site about Lorem Ipsum, 
-                        giving information on its origins, 
-                        as well as a random Lipsum generator
-                    </p>
-                    <div class="logo">
-                        <a href="#">More</a>
-                        <div>
-                            <i class="fa fa-comment"> 4</i>
-                            <i class="fa fa-eye"> 14</i>
+            <div id="about">
+                <div class="bio">
+                    <img src="31492362_2155785607984623_8147778283086282752_o.jpg"/>
+                    <div class="info">
+                        <h2>Who is this guy?</h2>
+                        <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                        <a href="#" class="btn btn-sm">Contact me</a>
+                    </div>
+                </div>
+                <div class="skill">
+                    
+                    <div class="my-skill">
+                        
+                        <div class="skill-title">
+                            <span class="skill-name">Html</span>
+                            <span class="skill-percentage">
+                            95%</span>
+                        </div>
+                        
+                        <div class="progress">
+                            <div class="progress-bar html"></div>
                         </div>
                     </div>
-                </article>
-                <article class="content">
-                    <h2>Who is a front end developer?</h2>
-                    <div class="post-underline"></div>
-                    <p>
-                        Lorem Ipsum, 
-                        giving information on its origins, 
-                        as well as a random Lipsum generator
-                    </p>
-                    <div class="logo">
-                        <a href="#">More</a>
-                        <div>
-                            <i class="fa fa-comment"> 4</i>
-                            <i class="fa fa-eye"> 14</i>
+                    
+                    <div class="my-skill">
+                        
+                        <div class="skill-title">
+                            <span class="skill-name">css</span>
+                            <span class="skill-percentage">
+                            90%</span>
+                        </div>
+                        
+                        <div class="progress">
+                            <div class="progress-bar css"></div>
                         </div>
                     </div>
-                </article>
-                <article class="content">
-                    <h2>Who is a front end developer?</h2>
-                    <div class="post-underline"></div>
-                    <p>
-                        Lorem Ipsum, 
-                        giving information on its origins, 
-                        as well as a random Lipsum generator
-                    </p>
-                    <div class="logo">
-                        <a href="#">More</a>
-                        <div>
-                            <i class="fa fa-comment"> 4</i>
-                            <i class="fa fa-eye"> 14</i>
+                    
+                    <div class="my-skill">
+                        
+                        <div class="skill-title">
+                            <span class="skill-name">javascript</span>
+                            <span class="skill-percentage">
+                            65%</span>
+                        </div>
+                        
+                        <div class="progress">
+                            <div class="progress-bar js"></div>
                         </div>
                     </div>
-                </article>   
-                <article class="content">
-                    <h2>Different between let , var and const?</h2>
-                    <div class="post-underline"></div>
-                    <p>
-                        Lorem Ipsum, 
-                        giving information on its origins, 
-                        as well as a random Lipsum generator
-                    </p>
-                    <div class="logo">
-                        <a href="#">More</a>
-                        <div>
-                            <i class="fa fa-comment"> 4</i>
-                            <i class="fa fa-eye"> 14</i>
+                    
+                    <div class="my-skill">
+                        
+                        <div class="skill-title">
+                            <span class="skill-name">jquery</span>
+                            <span class="skill-percentage">
+                            75%</span>
+                        </div>
+                        
+                        <div class="progress">
+                            <div class="progress-bar jquery"></div>
                         </div>
                     </div>
-                </article>
-            </section>
-        </section>
-        <!--End Blog Section -->
-        
-        
-        <!--Start Contact Section-->
-        <section id="contact">
-             <header class="title">
-                <span>Contact</span>
-                <div class="underline"></div>
-            </header>
-            <section class="inputBox">
-                <div>
-                    <input type="text" placeholder="Username" class="control">
+                    
+                    <div class="my-skill">
+                        
+                        <div class="skill-title">
+                            <span class="skill-name">Bootstrap</span>
+                            <span class="skill-percentage">
+                            70%</span>
+                        </div>
+                        
+                        <div class="progress">
+                            <div class="progress-bar bootstrap"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="my-skill">
+                        
+                        <div class="skill-title">
+                            <span class="skill-name">Git</span>
+                            <span class="skill-percentage">
+                            80%</span>
+                        </div>
+                        
+                        <div class="progress">
+                            <div class="progress-bar git"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="my-skill">
+                        
+                        <div class="skill-title">
+                            <span class="skill-name">Scss</span>
+                            <span class="skill-percentage">
+                            70%</span>
+                        </div>
+                        
+                        <div class="progress">
+                            <div class="progress-bar scss"></div>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div>
-                    <input type="email" placeholder="Email" class="control">
-                </div>
-                <div>
-                    <textarea placeholder="Message"></textarea>
-                </div>
-                <div>
-                    <a href="#" id="submit">Submit</a>
-                </div>
-            </section>
-        </section>
-        <!--End Contact Section-->
-        <!--Start Footer Section-->
-        <footer id="theFooter">
-            <div id="goTop">
-                <a href="#" id="topSign">
-                    <i class="fa fa-arrow-up"></i>
-                </a>
             </div>
-             <div class="social">
-                 <div>
-                     <i class="fa fa-linkedin"></i>
-                </div>
-                <div>
-                    <i class="fa fa-facebook"></i>
-                </div>
-                <div>
-                    <i class="fa fa-instagram"></i>
-                </div>
-                <div>
-                    <i class="fa fa-github"></i>
-                </div>
-             </div>
-             <section class="copyRight">
-                 SohailBadghisi <span>@2019</span>
-             </section>
-        </footer>
-        <!--End Footer Section-->
+            
+        </div>
+        <!--End About -->
+        
     
           <script type="application/javascript">
               
-              var myInfo = document.getElementById('myInfo');
-var percentage = document.getElementsByClassName('percentage');
-var article = document.getElementsByClassName('content');
-var barIcon = document.getElementById('bar');
-var list = document.getElementsByClassName('list')[0];
-var skill = document.getElementById('mySkill');
-
-barIcon.addEventListener('click', showList);
-function showList() {
-    list.classList.toggle('addHeight');
-}
-
-document.addEventListener('scroll', progress);
-
-for(let i=0; i<article.length; i++) {
-    article[i].addEventListener('mouseover', fun1);
-}
-
-
-function fun1(e) {
-    this.style.opacity='1';
-    for(let i=0; i<article.length; i++) {
-        article[i].style.opacity='0.5';
-        article[i].style.transition='0.4s ease';
-        if(article[i]===this) {
-            this.style.opacity='1';
-            this.style.transition='0.4s ease';
-        }
-    }
-}
-
-function progress() {
-    document.getElementsByClassName('progress-bg')[0].style.width='95%';
-    document.getElementsByClassName('progress-bg')[1].style.width='95%';
-    document.getElementsByClassName('progress-bg')[2].style.width='80%';
-    document.getElementsByClassName('progress-bg')[3].style.width='75%';
-    document.getElementsByClassName('progress-bg')[4].style.width='55%';
-    document.getElementsByClassName('progress-bg')[5].style.width='85%';
-    document.getElementsByClassName('progress-bg')[6].style.width='80%';
-    document.getElementsByClassName('progress-bg')[7].style.width='90%';
-    for(let i = 0; i<percentage.length; i++) {
-        percentage[i].style.opacity='1';
-    }
-} 
-
-
-
-
-let targets = document.querySelectorAll('.pro');
-var info = document.querySelector('.info');
-window.addEventListener("scroll", function(){
-  let doc = document.documentElement;
-  let top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
-  
-  let windowHeight = window.innerHeight;
-  
-  for (i = 0; i < targets.length; ++i) {
-    let target = targets[i];
-    if(target.offsetTop < (top + (windowHeight/2))) {
-        target.classList.add("visible");
-        info.classList.add('info-visible');
-    }
-    else {
-      target.classList.remove("visible");
-      info.classList.remove('info-visible');
-    }
-  }
-});
-
-
+              
+           
+           var bar = document.getElementById('bar');
+           
+           var menu = document.getElementById('menubar');
+           
+           bar.addEventListener('click',showMenu);
+           
+           
+           function showMenu() {
+               menu.classList.toggle('addheight');
+           }
+           
+           
+           
+           
+           
+           
+           
 
               
         </script>
         <style type="text/css">
-            :root {
-    --color-one:#53cb53;
+          * {
+    margin: 0;
+    padding: 0;
 }
-
-* {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;   
+   
+:root {
+    --primary-color: crimson;
 }
-
+/* Utilities */
 .title {
     padding: 3rem 0;
     text-align: center;
-    float: left;
-    width: 100%;
 }
-.title span {
-    font-size: 3rem;
+.title h2 {
+    color: #4b4b4b;
+    font-size: 2rem;
 }
-.title .underline {
-    width: 12%;
-    margin: 1% auto;
+.underline {
+    background:var(--primary-color);
+    width: 100px;
     height: 3px;
-    background: var(--color-one);
+    margin: auto;
+}
+.btn {
+    
 }
 body {
-    transition: 0.5s ease;
-    background: #ffffff;
-    font-family:'lato',sans-serif;
-    color: #4b4b4b;
+    font-family: 'roboto', serif
 }
 
-.top-header {
+#top-header {
+    background: #1d1d1d;
     display: flex;
-    background:#fff;
-    padding-top: .4rem;
-    float: left;
+    padding: .9rem 1rem ;
 }
-            .top-header div {
-                flex:1;
-            }
-#logo {
-    font-size: 1.8rem;
-    padding: .5rem 0 .5rem 2rem;
-    color: #4d4b4b;
-    font-weight: 600;
+#top-header div {
+    flex: 1;
+}
+
+#top-header div:nth-child(1) {
+    flex: 1.6;
+}
+
+#top-header a {
     text-decoration: none;
 }
-#logo .fa-code {
-    color: var(--color-one);
+a .fa-code {
+    font-weight: bolder;
+    color: #fd4a6e;
+    font-size: 1.6rem;
+}
+
+#logo {
+    font-size: 1.3rem;
+    margin-top: .1rem;
+    float: left;
+    margin-left: 1rem;
+    color: #fff;
 }
 #bar {
     display: none;
 }
-nav {
-    margin-left: 70vh;
-}
 .list {
     display: flex;
-}
-.list li {
     list-style: none;
-    margin: 0 2.1rem;
-    padding: 1rem ;
-    transition: 0.4s;
-}
-.list li a {
-    padding-bottom: .5rem;
-    color: #4b4b4b;
-    transition: .3s;
-}
-.list li:hover {
- 
-}
-.list li:nth-child(1) a, .list li a:hover {
-    color: #a09e9e;
-}
-.list li a {
-    font-size: 1.2rem;
-    text-decoration: none;
+    margin: .5rem 0 0 0 ;
 }
 
-
+.list li {
+    margin: 0 2.5rem;
+}
+.list a {
+    color: #fff;
+    transition:.6s;
+}
+.list  .active , .list a:hover{
+    color: #fd4a6e;
+}
+.list a {
+    font-size: 1.1rem;
+}
 .banner {
-    float: left;
-    width: 100%;
-    height: 100vh;
-    float: left;
-    width: 100%;
-    background: url('https://i.ibb.co/FDdrbqY/clement-h-544786-unsplash.jpg');
-    background-size:cover;
-    background-position: center;
-    font-family: calibri;
+    background: url("Images/sabri-tuzcu-wkO0q0UTqc8-unsplash.jpg");
+    background-size: cover;
 }
 .bg-dark {
-    padding-top: 5rem;
-    background:rgba(0,0,0,.8);
+    padding-top: 3rem;
+    background: rgba(0,0,0,0.8);
     display: flex;
-    height: 100vh;
     flex-direction: column;
     text-align: center;
+    align-content: center;
     justify-content: center;
+    align-items: center;
+    height: 88vh;
+        text-shadow: .1rem .1rem
+        .3rem rgba(0,0,0,0.6);
+    font-family: calibri;
 }
-.banner h1 {
-    font-size:3.6rem;
+.banner h2 {
+    text-shadow: .1rem .1rem
+        .3rem rgba(0,0,0,0.6);
+    font-size: 3.1rem;
     color: #fff;
-    margin: .1rem 0;
-    text-shadow: .1rem .1rem .5rem rgba(0,0,0,2);
 }
-#sohail {
-    font-weight: normal;
-}
-.banner h1:nth-child(2) {
-    margin-bottom: 1.2rem;
+.banner h4 {
+    font-weight: 100;
+    color: #d4d2d2;
+    font-size: 2.2rem;
 }
 
-.bg-dark > div {
-    margin-top: .1rem;
-}
-.bg-dark a {
-    font-size: 1.4rem;
-    background: transparent;
-    color: #fff;
-    border:2px solid var(--color-one);
-    padding: .5rem .8rem;
+.banner a{
+    border:1px solid var(--primary-color);
+    padding: .7rem 2rem;
     text-decoration: none;
-    transition: .6s;
-    margin-right:  .5rem;
-    border-radius:.1rem;
+    color: #fff;
+    text-shadow: none;
+    transition: 1s;
+    margin-top: .5rem;
+    font-size: 1.2rem;
 }
-.bg-dark a:hover {
-    background: var(--color-one);
-}
-            
-.banner a .fa {
-    font-size: 1rem;
+.banner a:hover {
+    background: var(--primary-color);
 }
 
-/* ------------End Home Section------------ */
 
+/* --------- End Home ---------*/
 
-/* ------------Start About Section------------ */
+/* --------- Start About ---------*/
+#about-wrapper {
+    background: #eee;
+    padding: 0 0 5rem 5rem ;
+}
 #about {
-    background: #ffffff;
-    padding: 0 4rem;
-    float: left;
+    display: flex;
+}
+.bio {
+    flex: .7;
+    background: #fff;
 }
 
-.percentage {
-    opacity: 0;
-    transition: 5s;
-}
-
-
-.wrapper {
-    padding-bottom: 3rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 3rem;
-    float: left;
-    width: 100%;
-}
-#card {
-    width: 90%;
+.bio img {
+    width: 96%;
+    margin: 2%;
 }
 .info {
-    margin: 0 5%;
-    transition: .6s ease;
-    overflow: hidden;
-    font-family: 'roboto';
-    display: flex;
-    flex-direction: column;
-    text-align:center;
+    margin: 1rem;
 }
-.info-visible {
-    
-}
-.info img {
-    width: 200px;
-    border-radius: 100px;
-    height: 200px;
-    margin: 1rem auto;
-}
-.info-title {
-    font-size: 1.7rem;
+.info h2 {
+    margin-bottom: .7rem;
+    text-transform: uppercase;
     color: #4b4b4b;
-    margin: .8rem .9rem .4rem;
 }
 .info p {
-    margin: 0 1rem;
-    font-size: 1rem;
-    color: #4b4b4b;
-    line-height: 1.6;
-}
-.info > div {
-    margin-top: 1rem;
-}
-.info-contact {
-    text-align: center;
-    text-decoration: none;
-    background: var(--color-one);
-    color: #fff;
-    padding: .5rem 2rem;
-    float: left;
-    margin-left: 33%;; 
+    color: #585757;
+    margin-bottom: 1rem;
 }
 
+.info .btn {
+    font-size: 1rem;
+    background: var(--primary-color);
+    padding: .4rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    margin: .1rem 0;
+}
 .skill {
-    display:flex;
-    flex-direction:column;
+    flex: 1;
+    padding: 0 3rem;
+}
+.my-skill {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.my-skill:nth-child(1) {
+    margin: 0;
+}
+.my-skill > div {
+    width: 100%;
+}
+.skill-title {
+    text-transform: uppercase;
+    color: #656565;
+    font-size: .9rem;
+}
+.skill-title .skill-percentage {
+    float: right;
 }
 .progress {
-    background: #EEEEEE;
-    margin: 1rem 0;
-    display: flex;
-    font-size: 1rem;
-}
-.text {
-    font-size: 1rem;
-    font-weight: 400;
-    background-color: #292828;
-    flex: 1.8;
-    padding: .3rem .5rem;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-
+    background: #fff;
+    margin: .5rem 0; 
+    width: 100%;
 }
 .progress-bar {
-    flex:4;
-    
-}
-.progress-bg {
-    background: #464646;
-    height: 100%;
-    transition: 2s ease-in;
-    width: 0%;
-}
-.percentage {
-    flex: 1;
-    font-size: 1rem;
+    background: #696969;
     padding: .4rem 0;
-    text-align: center;
-    border-radius: 0 .3rem .3rem 0;
 }
-
-/* ------------End About Section------------ */
-
-/* ------------Start Project Section------------ */
-#project {
-    float: left;
-    background: #eee;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    background-size: cover;
-}
-
-.pr-wrapper {
-    padding: 0 5% 10% 10% ;
-    float: left;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 4rem;
-}
-.pro {
-    width: 60%;
-}
-.pro img {
-    height: 13vh;;
-}
-.inner {
-    margin: 1rem;
-    padding-bottom: .5rem;
-}
-.inner h3 {
-    font-size: 1.4rem;
-    margin-bottom: .5rem;
-}
-.inner b {
-    font-size: 1.2rem;
-    color: #b9b9b9;
-}
-.inner .buttons {
-    margin-top: .5rem;
-    padding: 1rem 0 0 0 ;}
-.buttons .btn  {
-    color: #4b4b4b;
-    padding: .5rem 1rem;
-    text-decoration: none;
-    border-radius: .2rem;
-}
-.buttons .download {
-    border:1px solid #4b4b4b;
-    margin-right: .3rem;
-}
-.buttons .buy {
-    background: var(--color-one);
-    color: #fff;
-}
-.pro {
-    background: white;
-    opacity: 0;
-    transition: 1s ease-in;
-}
-
-.visible {
-    opacity: 1;
-    width: 100%;
-    transition: 1s ease-out;
-}
-
-.pro img {
-    width: 100%;
-    height: 25vh;
-}
-
-/* ------------End Project Section------------ */
-
-#blog {
-    float: left;
-    width: 100%;
-    padding-bottom: 3rem;
-}
-.post {
-    display: grid;
-    padding: 1rem 4rem;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 1rem;
-    grid-row-gap: 3rem;
-}
-
-.content h2{ 
-    font-size: 1.7rem;
-}
-.post-underline {
-    background: var(--primary-color);
-    height: 3px;
-    width: 100px;
-    margin: 1rem 0;
-}
-.post p {
-    font-size: 1.1rem;
-    color: #808080;
-}
-.logo {
-    margin: .7rem 0;
-}
-.logo a {
-    color: var(--color-one);
-    font-size: 1.2rem;
-}
-.logo div {
-    display: inline;
-    margin-left: 1rem;
-}
-.logo div i {
-    font-size: 1.2rem;
-    margin: 0 1rem;
-    color: #939292;
-}
-
-/* -----------End Blog Section----------- */
-
-/* -----------Start Contact Section----------- */
-#contact {
-    background-color: #eee;
-    float: left;
-    width: 100%;
-    padding-bottom: 10vh;
-}
-
-#contact .title span {
-    color: 
-}
-#contact .underline {
-    background: #4b4b4b;
-} 
-.inputBox {
-    margin: auto;
-    width: 45%;
-}
-.control {
-    border:none;
-    display: block;
-    border-radius: .2rem;
-    width: 100%;
-    padding: .6rem .4rem;
-    background: #fff;
-    color: #4b4b4b;
-    margin: .6rem 0;
-    font-size: 1rem;
-    outline: none;
-    transition: 0.s ease;
-}
-
-textarea {
-    border: none;
-    color: white;
-    width: 100%;
-    border-radius: .2rem;
-    background: #fff;
-    height: 15vh;
-    outline: none;
-    font-size: 1.3rem;
-    padding: .6rem .4rem 0 .4rem;
-    color: #4b4b4b;
-}
-#submit {
-    float: right;
-    color: #fff;
-    font-weight: 400;
-    border-radius: .2rem;
-    text-decoration: none;
-    background: var(--color-one);
-    padding: .5rem 2rem;
-    margin-top: 1rem;
-    transition: 0.5s;
-}
-#submit:hover {
-    background: #e81741;
-}
-/* -----------End Contact Section----------- */
-
-/* -----------Start Footer Section----------- */
-#theFooter {
-    background:#292828;
-    float: left;
-    width: 100%;
-}
-#goTop {
-    float: left;
-    width: 100%;
-    text-align: center;
-}
-
-#topSign {
-    padding: 1rem;
-    background: var(--color-one);
-    color: #fff;
-    transition: 0.5s ease;
-}
-.social {
-    padding: 5rem 0 2rem 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: .1fr .1fr .1fr .1fr;
-    justify-content: center;
-    text-align: center;
-}
-.social div {
-    background: #fff;
-    cursor: pointer;
-    color: #505269;;
-    margin: 0 1rem;
-    padding: .8rem 0;
-    font-size: 1.3rem;
-    transition: 0.4s;
-    width: 40%;
-    border-radius: .2rem;
-}
-.social div i {
-    color: #1da21d;
-}
-.copyRight {
-    color: #a3a3a3;
-    letter-spacing: .1rem;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
-}
-.copyRight span {
-    color: #d0cccc;
-    margin-left: .4rem;
-}
-/* -----------End Footer Section----------- */
+.progress .html {width: 95%;}
+.progress .css {width: 90%;}
+.progress .js {width: 65%;}
+.progress .jquery {width: 75%;}
+.progress .bootstrap {width: 75%;}
+.progress .git {width: 80%;}
+.progress .scss {width: 70%;}
 
 
-/* ----------- Start Responsive Design -------------- */
 
-@media screen and (max-width: 400px) {
-    .title .underline {
-        width: 40%;
-    }
-    .top-header {
-        padding: .5rem 0;
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+    #bar {
+        display: block;
+        float: right;
+        font-size: 2rem;
+        margin-top: .1rem; 
+        color: var(--primary-color);
     }
     #logo {
-        font-size: 1.7rem;
-    }
-    nav {
-        margin-left: 0;
+        margin-top: .4rem;
     }
     .list {
         position: absolute;
-        flex-direction: column;
-        background: #f7f5f5;
+        background: #4b4b4b;
         width: 100%;
-        position: absolute;
-        justify-content: center;
+        flex-direction: column;
         left: 0;
-        top:4rem;
+        top:9%;
+        text-align: center;
+        transition: .6s;
         height: 0%;
         overflow: hidden;
-        transition: 0.4s;
-        text-align: center;
+        justify-content: center;
     }
-    .addHeight {
-        height: 70%;
+    .addheight {
+        height: 50%;
     }
-    .list li:nth-child(1) {
-        background: none;
+    .list li {
+        margin: 1rem 0;
     }
     .list a {
-        color: #4b4b4b;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
-    .list li:nth-child(1) a {
-        color: var(--color-one);
+    .banner h2 {
+        font-size: 3rem;
     }
-    #bar {
-        display: block;
-        margin-left: 8rem;
-        margin-top: .6rem;
-        color: var(--color-one);
-    }
-    #bar .fa {
-        font-size: 2rem;
-    }
-    .banner {
-        padding: 0;
-    }
-    .banner h1 {
-        font-size: 2.5rem;
-    }
-    .bg-dark {
-        padding: 0;
-        background: rgba(0,0,0, 0.5);
-    }
+    
+    /*End Home Section*/
     
     #about {
-        padding: 0 2rem;
-    }
-    #about .underline {
-        width: 50%;
-    }
-    .wrapper {
-        grid-template-columns: 1fr;
-    }
-    #card {
-        width: 100%;
-    }
-    .info {
-        width: 100%;
-        margin: 0 0 10% 0;
-        padding: 0;
-    }
-    .info img {
-        margin: 0 auto;
-    }
-    .info-contact {
-        margin-left: 24%;;
-        background: none;
-        color: var(--color-one);
-        font-size: 1.2rem;
-    }
-    .text {
-        padding: .4rem;
-        font-size: .9rem;
-        flex: 2.3;
-    }
-    .progress {
-        font-size: 1rem;
-        margin:.8rem 0;
-    }
-    .percentage {
-        padding: .4rem;
-        font-size: .9rem;
-    }
-    .pr-wrapper {
-        padding: 0 2rem 5rem 2rem;
-        float: left;
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-gap: 4rem 2rem;
+        flex-direction: column;
     }
     
-    .post {
-        grid-template-columns: 1fr;
-    }
-    .post-underline {
-        margin: .2rem 0; 
-    }
-    .logo div i {
-        font-size: .9rem;
+    #about-wrapper {
+        padding: 0 3rem;
     }
     
-    .logo a {
-        font-size: 1rem;
+    .skill {
+        padding: 2rem 0;
     }
     
-    .inputBox {
-        width: 80%;
-    }
-    #goTop {
-        display: none;
-    }
-    .social {
-         grid-template-columns: 3fr 3fr 3fr 3fr;
+    .my-skill {
+        margin: 1rem 0;
     }
     
-    .social div {
-        margin: 0 2rem;
-        width: 50%;
-    }
 }
-
-
 
         </style>
       
