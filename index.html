@@ -99,7 +99,7 @@ a .fa-code {
     font-size: 1.1rem;
 }
 .banner {
-    background: url("https://i.ibb.co/wSDv1nf/sabri-tuzcu-wk-O0q0-UTqc8-unsplash.jpg");
+    background: url("Images/sabri-tuzcu-wkO0q0UTqc8-unsplash.jpg");
     background-size: cover;
 }
 .bg-dark {
@@ -457,9 +457,7 @@ input[type='submit'] {
     }
 }
 @media only screen and (max-width: 500px) {
-    .banner {
-        background-position: center;
-    }
+    
     .list {
         width: 100%;
     }
@@ -470,19 +468,66 @@ input[type='submit'] {
         margin: 1rem;
     }
     .list a {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
+    }
+    .list .active {
+        color: #eee;
+    }
+    .banner {
+        background-position: center;
+    }
+    .banner a {
+        font-size: 1.2rem;
+        padding: .7rem 2rem;
+    }
+    .bg-dark {
+        background: rgba(0,0,0, 0.8);
+    }
+    .bg-dark h2{
+        font-size: 2.5rem;
+    }
+    .bg-dark h4 {
+        font-size: 2rem;
     }
     #about {
         padding: 0;
     }
     .bio {
-        margin: 0 3rem 2rem 3rem;
+        margin: 0 2rem 2rem 2rem;
+    }
+    .bio img {
+        height: 40vh;
+        margin-bottom: 0;
+    }
+    .bio h2 {
+        margin-bottom: .5rem;
+    }
+    .skill {
+        padding: 0;
+        margin: 0 2rem;
+    }
+    .my-skill {
+        
     }
     .pr-wrapper {
         flex-direction: column;
 
         margin: 2rem 0; 
     }
+    .image {
+        border-bottom: 5px solid #cb3c59;
+    }
+    .image:nth-child(2) {
+        border-bottom: none;
+        border-top: 5px solid #cb3c59;
+    }
+    .see-more {
+        text-align: center;
+    }
+    .see-more .btn {
+        margin: auto;
+    }
+    
     .input-control {
         padding: .7rem .5rem;
     }
@@ -499,7 +544,7 @@ input[type='submit'] {
         margin-top: 3rem;
     }
     .footer-wrapper {
-        width: 50%;
+        width: 60%;
     }
     .footer-wrapper  div{
         margin: 0 .5rem;
