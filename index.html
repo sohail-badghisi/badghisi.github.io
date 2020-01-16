@@ -8,14 +8,15 @@
          <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <style type="text/css">
-            * {
+          * {
     margin: 0;
     padding: 0;
 }
    
 :root {
-    --primary-color: crimson;
+   --color-one: #007BFF;
 }
 /* Utilities */
 .title {
@@ -24,16 +25,15 @@
 }
 .title h2 {
     color: #4b4b4b;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 .title .fa {
     font-weight: 600;
     font-size: 2rem;
-    color: var(--primary-color);
+    color: var(--color-one);
 }
 .underline {
-
-    background:var(--primary-color);
+    background:var(--color-one);
     width: 100px;
     height: 3px;
     margin: auto;
@@ -44,20 +44,17 @@ body {
 }
 
 #top-header {
-    background: #1d1d1d;
+    background: #031d39;
     display: flex;
     padding: .9rem 1rem ;
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-    transition: 1s;
+    width: 100%;    
 }
 #top-header div {
     flex: 1;
 }
 
 #top-header div:nth-child(1) {
-    flex: 1.6;
+    flex: 1.4;
 }
 
 #top-header a {
@@ -65,16 +62,19 @@ body {
 }
 a .fa-code {
     font-weight: bolder;
-    color: #fd4a6e;
-    font-size: 1.6rem;
+    color: #adc5de;
 }
-
+#logo-wrapper {
+    padding-left: 5rem;
+}
 #logo {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-top: .1rem;
     float: left;
+    margin-left: 22rem;
     margin-left: 1rem;
-    color: #fff;
+    color: #fff;;
+    font-weight: bold;
 }
 #bar {
     display: none;
@@ -91,56 +91,58 @@ a .fa-code {
 .list a {
     color: #fff;
     transition:.6s;
+    font-weight: 400;
 }
 .list  .active , .list a:hover{
-    color: #fd4a6e;
+    color: #adc5de;
 }
 .list a {
     font-size: 1.1rem;
 }
-.banner {
-    background: url("https://i.ibb.co/DgT2WKN/mika-baumeister-J5yo-GZLdp-SI-unsplash.jpg");
+.my-banner {
+    background: url("https://i.ibb.co/wg1xFyW/nordwood-themes-k-RNZi-GKtz48-unsplash.jpg");
     background-size: cover;
+    float: left;;
+    background-position: center;
+    width: 100%;
 }
-.bg-dark {
+.mybg-dark {
     padding-top: 3rem;
-    background: rgba(0,0,0,0.8);
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-content: center;
+    text-align: start;
+    align-content: flex-start;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 93vh;
-        text-shadow: .1rem .1rem
-        .3rem rgba(0,0,0,0.6);
+    padding-left: 7rem;
     font-family: calibri;
 }
-.banner h2 {
-    margin-top: 10rem;
-    text-shadow: .1rem .1rem
-        .3rem rgba(0,0,0,0.6);
-    font-size: 3.1rem;
-    color: #fff;
+.my-banner h2 {
+    margin-top: 3rem;
+    font-size: 4.1rem;
+    color: #4b4b4b;
+    margin-bottom: 0;
 }
-.banner h4 {
+.my-banner h4 {
     font-weight: 100;
-    color: #d4d2d2;
-    font-size: 2.2rem;
+    color: #4b4b4b;
+    font-size: 2.5rem;
 }
 
-.banner a{
-    border:1px solid var(--primary-color);
+.my-banner a{
     padding: .7rem 2rem;
     text-decoration: none;
-    color: #fff;
     text-shadow: none;
     transition: 1s;
-    margin-top: .5rem;
+    background: transparent;
+    color: #4b4b4b;
     font-size: 1.2rem;
+    border:2px solid #007BFF;
+    border-radius: .2rem;
 }
-.banner a:hover {
-    background: var(--primary-color);
+.my-banner a:hover {
+    border-color: #007BFF;
 }
 
 
@@ -148,24 +150,64 @@ a .fa-code {
 
 /* --------- Start About ---------*/
 #about-wrapper {
-    background: #eee;
+    background: #fff;
+    float: left;
+    width: 100%;
 }
 #about {
     display: flex;
-    padding-left: 5rem;
-    padding-bottom: 5rem;
+    padding: 2rem 7rem 5rem 7rem;
 }
-.bio {
-    flex: .7;
-    background: #fff;
+#about-wrapper .title h2,
+#contact .title h2,
+#about-wrapper .title .underline {
+    position: absolute;
+    left: -200%;
+    transition: .5s;
 }
 
+#about-wrapper .title .underline {
+    width: 130px;
+}
+
+#about-wrapper .target.visible h2,
+#about-wrapper .target .underline,
+#contact .target.visible h2{
+    left: 45%;
+}
+#contact .title .underline {
+    width: 150px;
+    margin-left: 36rem;
+}
+
+
+#about-me {
+    flex: 1.1;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+#about-me .target.visible {
+    transition: .5s;
+    display: block;
+    width: 75%;
+}
+
+.bio {
+    margin: auto;
+    display: none;
+    background: #fff;
+   
+    border-radius: .3rem;
+    box-shadow: .1rem .1rem .4rem rgba(172, 172, 172, 0.6);
+}
 .bio img {
+    border-radius: .3rem;
     width: 96%;
     margin: 2%;
+    height: 45vh
 }
 .info {
-    margin: 1rem;
+    padding: 2rem 1rem;
     text-align: center;
 }
 .info h2 {
@@ -179,8 +221,9 @@ a .fa-code {
 }
 
 .info .btn {
+    display: block;
     font-size: 1rem;
-    background: var(--primary-color);
+    background: var(--color-one);
     padding: .4rem 2rem;
     color: #fff;
     text-decoration: none;
@@ -189,11 +232,12 @@ a .fa-code {
     border-radius: .1rem;
 }
 .info .btn:hover {
-    background: #eb264d;
+   opacity: .9;
+    color: white;
 }
 .skill {
-    flex: 1;
-    padding: 0 3rem;
+    flex: 1.2;
+    padding: 0 2rem;
 }
 .my-skill {
     margin: 2rem 0;
@@ -220,132 +264,145 @@ a .fa-code {
     margin: .5rem 0; 
     width: 100%;
 }
+
 .progress-bar {
-    background: #e62b51;
+    background: #00A1A7;
     padding: .4rem 0;
+    width: 0%;
+    transition:3s;
 }
-.progress .html {width: 95%;}
-.progress .css {width: 90%;}
-.progress .js {width: 65%;}
-.progress .jquery {width: 75%;}
-.progress .bootstrap {width: 75%;}
-.progress .git {width: 80%;}
-.progress .scss {width: 70%;}
+
+.target.visible .html { width: 95%; }
+.target.visible .css { width: 90%; }
+.target.visible .js { width: 60%; }
+.target.visible .jquery { width: 95%; }
+.target.visible .bootstrap { width: 90%; }
+.target.visible .git { width: 60%; }
+.target.visible .scss { width: 60%; }
+
 
 
 /* ----------------End About Section---------------- */
 
 
 /* ----------------Start Project----------------*/
-.pr-wrapper {
-    display: flex;
-    padding: 0 5rem;
-}
-.image {
-    flex: 1;
-}
-.image img {
+#project {
+    padding: 0 5% 5% 5% ;
     width: 100%;
+    float: left;
+    background:#eee;
 }
-.article {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    background: #eee;
+#project .title {
+    padding-bottom: 0;
+}
+#project .title h2 {
+    position: absolute;
+    left: -100%;
+    transition: .5s;
+}
+#project .target.visible h2{
+    left: 43%;
+}
+.container{
+    margin-top: 8%;
+}
+ 
+.inner{
+    overflow: hidden;
+}
+ 
+.inner img{
+    transition: all 1.5s ease;
+}
+ 
+.inner:hover img{
+    transform: scale(1.5);
 }
 
-.article h3 {
-    font-size: 1.5rem;
-    margin-bottom: .5rem;
-}
-.article p {
-    font-size: .9rem;
-    margin-bottom: 1rem;
-    margin: 0 2rem 1rem 2rem;
-}
-.article .btn {
-    background: var(--primary-color);
-    padding: .5rem 2rem;
-    color: #fff;
-    text-decoration: none;
-}
-
-.see-more {
-    padding: 2rem 5rem;
-    text-align: left;
-}
-.see-more a {
-    color: #fff;
-    background: #4b4b4b;
-    font-size: 1.2rem;
-    text-align: left;
-    padding: .5rem 2rem;
-    text-decoration: none;
+#project .col-md-4 {
+    margin: 0;
 }
 
 /*--------------------End Project--------------------*/
 
 
 /*--------------------Start Contact--------------------*/
+
+#contact {
+    background: #252934;
+    float: left;
+    width: 100%;
+}
+#contact .title h2 {
+    color:#fff;
+}
 #contact .underline {
     width: 140px;
-    
+    background: #fff;
 }
-#contact {
-    background: rgb(199, 199, 199);
+#contact .title .fa-phone {
+    color: #fff;
 }
 
 .touch {
     display: flex;
+    margin: auto;
     flex-direction: column;
     align-content: center;
     text-align: center;
+    margin: 2% 20%;
 }
+
+
 .row {
     flex:1;
     margin: auto;
-    width: 44%;
 }
 .input-control {
+    background: #1E242C;
     width: 100%;
+    margin: auto;
     overflow: hidden;
-    padding: 2% 2%;
+    padding: 1% 2%;
     margin: .2rem 0;
     z-index: auto;
     border: none;
     font-size: .9rem;
-    outline-color: crimson;
     outline-width: 1px;
+    outline-color: #434a5f;
 }
-
+.row:nth-child(3) {
+    margin-bottom: .2rem;
+}
 textarea {
-    outline-width: 1px;
-    outline-color: crimson;
+    background: #1E242C;
     font-size: 1.2rem;
     border: none;
     margin-top: .2rem;
+    float: left;
     width: 100%;
-    padding: 2% 2%;
-    height: 6rem;
+    padding: 1% 2%;
+    height: 7rem;
+    outline-color: #434a5f;
 }
-.row:nth-child(5) {
-    padding-left: 1.5rem;
-    width: 46%;
-}
+
 input[type='submit'] {
     cursor: pointer;
     float: right;
     text-decoration: none;
-    background: var(--primary-color);
+    width: 15%;
+    margin-left: 42rem;
+    margin-top: .3rem;
+    border-radius: .2rem;
+    transition: .8s;
+    background: #1268c4;
     color: #fff;
+    padding: 1.5% 0;
 }
 /* ----------- End Contact ----------- */
 #the-footer {
     margin-top: 5rem;
-    background: #1d1d1d;
+    background: #1B242F;
     padding: 2rem 0;
     width: 100%;
 }
@@ -358,14 +415,47 @@ input[type='submit'] {
 .footer-wrapper div {
     margin: auto;
     padding: .6rem 1rem;
-    background: #fff;
+    background: #252934;
     cursor: pointer;
     border-radius: .2rem;
+    transition: .6s;
+    color: #fff;
 }
-.footer-wrapper div a {
-    font-size: 1.3rem;
+.footer-wrapper div a .fa {
+    color: #fff;;
+}
+
+.footer-wrapper div:nth-child(1):hover {
+    background-color: dodgerblue;
+    color: #fff;
+}
+
+.footer-wrapper div:nth-child(1):hover a {
+    color: #fff;
+}
+.footer-wrapper div:nth-child(2):hover {
+    background-color: orangered;
+    color: #fff;
+}
+
+.footer-wrapper div:nth-child(3):hover {
+    background-color: #fff;
+    
+}
+
+.footer-wrapper div:nth-child(3):hover .fa {
     color: #4b4b4b;
 }
+
+.footer-wrapper div:nth-child(4):hover {
+    background-color: #3c3d3e;
+    
+}
+
+.footer-wrapper div:nth-child(4):hover .fa {
+    color: #fff;
+}
+
 
 @media only screen and (max-width: 900px) {
     
@@ -457,34 +547,76 @@ input[type='submit'] {
     }
 }
 @media only screen and (max-width: 500px) {
-    
+    #top-header {
+        padding: .5rem 0;
+    }
+    #logo-wrapper {
+        padding-top: .3rem;
+        padding-left: 0;
+    }
+    #logo .fa {
+        display: none;
+    }
+    #bar .fa{
+        color: #2a8bf4;
+    }
     .list {
         width: 100%;
+        height: 0%;
+        background: #eee;
+        top: 8.9%;
+        border: none;
     }
     .addHeight400 {
         height: 20rem;
     }
     .list li {
-        margin: 1rem;
     }
     .list a {
         font-size: 1.4rem;
+        color: #4b4b4b;
     }
     .list .active {
-        color: #eee;
+        color: #767676;
     }
-    .banner {
+    .my-banner {
+        background:url('https://i.ibb.co/Tb3z0dw/matthew-fournier-5-NM32v14n6-M-unsplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
         background-position: center;
     }
-    .banner a {
+    .my-banner a {
         font-size: 1.2rem;
         padding: .7rem 2rem;
     }
-    .bg-dark {
-        background: rgba(0,0,0, 0.8);
+    .my-banner h2 {
+        color: #fff;
+        text-shadow: .1rem .1rem .3rem 
+            rgba(0,0,0, 0.6);
+        font-size: 3rem;
+    }
+    .my-banner h4 {
+        color: #fff;
+        text-shadow: .1rem .1rem .3rem
+            rgba(0,0,0, 0.6);
+        font-size: 2.2rem;
+    }
+    .my-banner a {
+        font-size: 1rem;
+        color: #fff;
+    }
+    .mybg-dark {
+        padding: 0;
+        background: rgba(0,0,0, 0.9);
+        flex-direction: column;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
     }
     .bg-dark h2{
         font-size: 2.5rem;
+        color: #fff;
     }
     .bg-dark h4 {
         font-size: 2rem;
@@ -563,39 +695,16 @@ input[type='submit'] {
         font-size: 1rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </style>
     </head>
     <body>
         
-        
-        <div id="home">
+         <div id="home">
             <header id="top-header">
                 <div id="logo-wrapper">
                     <a href="#" id="logo">
                         <i class="fa fa-code"></i>
-                        Badghisi
+                        Sohail
                     </a>
                 </div>
                 <div id="menu">
@@ -611,11 +720,11 @@ input[type='submit'] {
                     </a>
                 </div>
             </header>
-            <section class="banner">
-                <div class="bg-dark">
+            <section class="my-banner">
+                <div class="mybg-dark">
                     <h2>I am Sohail Badghisi</h2>
                     <h4>A front end developer</h4>
-                    <a href="#" class="btn btn-lg">My Projects 
+                    <a href="#" class="btn btn-primary btn-lg">My Projects 
                         <i class="fa fa-angle-down"></i>
                     </a>
                 </div>
@@ -628,7 +737,7 @@ input[type='submit'] {
         <!--Start About -->
         <div id="about-wrapper">
             
-            <div class="title">
+            <div class="title target">
                 <h2 id="title">About
                     <i class="fa fa-info"></i>
                 </h2>
@@ -636,16 +745,20 @@ input[type='submit'] {
             </div>
             
             <div id="about">
-                <div class="bio">
-                     <img src="https://i.ibb.co/hB28Vd2/31492362-2155785607984623-8147778283086282752-o.jpg"/>
-                    <div class="info">
-                        <h2>Who is this guy?</h2>
-                        <p>I am Sohail, a front end developer and web designer with 3 years experience 
-                        in web development.</p>
-                        <a href="#" class="btn btn-sm">Contact me</a>
+                
+                <div id="about-me">
+                    <div class="bio target">
+                         <img src="https://i.ibb.co/hB28Vd2/31492362-2155785607984623-8147778283086282752-o.jpg"/>
+                        <div class="info">
+                            <h2>Who is this guy?</h2>
+                            <p>I am Sohail, a front end developer and web designer with 3 years experience 
+                            in web development.</p>
+                            <a href="#" class="btn btn-sm">Contact me</a>
+                        </div>
                     </div>
                 </div>
-                <div class="skill">
+                
+                <div class="skill target ">
                     
                     <div class="my-skill">
                         
@@ -656,7 +769,7 @@ input[type='submit'] {
                         </div>
                         
                         <div class="progress">
-                            <div class="progress-bar html"></div>
+                            <div class="progress-bar  html "></div>
                         </div>
                     </div>
                     
@@ -669,7 +782,7 @@ input[type='submit'] {
                         </div>
                         
                         <div class="progress">
-                            <div class="progress-bar css"></div>
+                            <div class="progress-bar target css"></div>
                         </div>
                     </div>
                     
@@ -682,7 +795,7 @@ input[type='submit'] {
                         </div>
                         
                         <div class="progress">
-                            <div class="progress-bar js"></div>
+                            <div class="progress-bar target js"></div>
                         </div>
                     </div>
                     
@@ -695,7 +808,7 @@ input[type='submit'] {
                         </div>
                         
                         <div class="progress">
-                            <div class="progress-bar jquery"></div>
+                            <div class="progress-bar target jquery"></div>
                         </div>
                     </div>
                     
@@ -708,7 +821,7 @@ input[type='submit'] {
                         </div>
                         
                         <div class="progress">
-                            <div class="progress-bar bootstrap"></div>
+                            <div class="progress-bar target bootstrap"></div>
                         </div>
                     </div>
                     
@@ -721,7 +834,7 @@ input[type='submit'] {
                         </div>
                         
                         <div class="progress">
-                            <div class="progress-bar git"></div>
+                            <div class="progress-bar target git"></div>
                         </div>
                     </div>
                     
@@ -734,8 +847,8 @@ input[type='submit'] {
                         </div>
                         
                         <div class="progress">
-                            <div class="progress-bar scss"></div>
-                        </div>
+                            <div class="progress-bar target scss"></div>
+                        </div> 
                     </div>
                     
                 </div>
@@ -748,7 +861,7 @@ input[type='submit'] {
         <!--Start Project-->
         <div id="project">
             
-            <div class="title">
+            <div class="title target ">
                 <h2>Project
                     <i class="fa fa-tasks"></i>
                 </h2>
@@ -756,55 +869,115 @@ input[type='submit'] {
             </div>
             
             
-          <div class="pr-wrapper">
-                
-                <div class="image">
-                    <img src="https://i.ibb.co/PWzpS31/27fd75ea81564fdb517073bb7a94c4d8.jpg"/>
-                </div>
-                
-                <div class="article">
-                    <h3>Book Cafe</h3>
-                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print</p>
-                    <a  href="#" class="btn btn-sm">Download</a>
-                </div>
-                
+            
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card shadow" style="width: 20rem;">
+                    <div class="inner">
+                        <img class="card-img-top" src="alskdj.PNG" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Design</h5>
+                      <p class="card-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                      </p>
+                      <a href="#" class="btn btn-primary">Learn More...</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow" style="width: 20rem;">
+                    <div class="inner">
+                            <img class="card-img-top" src="alskdj.PNG" alt="Card image cap">
+                    </div>
+                    
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Responsive</h5>
+                      <p class="card-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                      </p>
+                      <a href="#" class="btn btn-primary">Learn More...</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow" style="width: 20rem;">
+                    <div class="inner">
+                            <img class="card-img-top" src="alskdj.PNG" alt="Card image cap">
+                    </div>
+                    
+                    <div class="card-body text-center">
+                      <h5 class="card-title">UI/UX</h5>
+                      <p class="card-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                      </p>
+                      <a href="#" class="btn btn-primary">Learn More...</a>
+                    </div>
+                  </div>
             </div>
             
-            <div class="pr-wrapper">
-                
-                
-                
-                <div class="article">
-                    <h3>50 50 Restaurant</h3>
-                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-                    <a  href="#" class="btn btn-sm">Download</a>
-                </div>
-                
-                <div class="image">
-                    <img src="https://i.ibb.co/vmqgj6k/d8f069d9-0938-41cb-9fe6-f4ac17072874-Dream-Host20-Custom20-Website-750x498.jpg"/>
-                </div>
-                
-                
-                
-                
+            <div class="col-md-4" style="margin: 2% 0;">
+                <div class="card shadow" style="width: 20rem;">
+                    <div class="inner">
+                            <img class="card-img-top" src="alskdj.PNG" alt="Card image cap">
+                    </div>
+                    
+                    <div class="card-body text-center">
+                      <h5 class="card-title">UI/UX</h5>
+                      <p class="card-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                      </p>
+                      <a href="#" class="btn btn-primary">Learn More...</a>
+                    </div>
+                  </div>
             </div>
             
-            <div class="pr-wrapper">
-                
-                <div class="image">
-                    <img src="https://i.ibb.co/h9cdBdQ/grocery-store.jpg"/>
-                </div>
-                
-                <div class="article">
-                    <h3>Computer Science Ghalib University</h3>
-                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-                    <a  href="#" class="btn btn-sm">Download</a>
-                </div>
-                
+            <div class="col-md-4" style="margin: 2% 0;">
+                <div class="card shadow" style="width: 20rem;">
+                    <div class="inner">
+                            <img class="card-img-top" src="alskdj.PNG" alt="Card image cap">
+                    </div>
+                    
+                    <div class="card-body text-center">
+                      <h5 class="card-title">UI/UX</h5>
+                      <p class="card-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                      </p>
+                      <a href="#" class="btn btn-primary">Learn More...</a>
+                    </div>
+                  </div>
             </div>
             
-            <div class="see-more">
-                <a href="#" class="btn">See more</a>
+            <div class="col-md-4" style="margin: 2% 0;"> 
+                <div class="card shadow" style="width: 20rem;">
+                    <div class="inner">
+                            <img class="card-img-top" src="alskdj.PNG" alt="Card image cap">
+                    </div>
+                    
+                    <div class="card-body text-center">
+                      <h5 class="card-title">UI/UX</h5>
+                      <p class="card-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                      </p>
+                      <a href="#" class="btn btn-primary">Learn More...</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+            
+            
+            
+          
+            <div class="see-more" style="padding-left: 1rem;">
+                <a href="#" class="btn btn-dark pr-5 pl-5" style="text-decoration: underline;">See more</a>
             </div>
             
             
@@ -817,14 +990,14 @@ input[type='submit'] {
         <!--Start Contact -->
         <div id="contact">
             
-            <div class="title">
+            <div class="title target">
                 <h2>Contact 
                     <i class="fa fa-phone"></i>
                 </h2>
                 <div class="underline"></div>
             </div>
             
-            <div class="touch">
+            <div class=" visible touch">
                 <div class="row">
                     <input class="input-control" placeholder="Username" type="text">
                 </div>
@@ -862,32 +1035,43 @@ input[type='submit'] {
         </div>
         <!--End Contact -->
         
+        
+        
+       
        <script type="text/javascript">
            
            
-           
-           var bar = document.getElementById('bar');
-           
-           var menu = document.getElementById('menubar');
-           
-           var about = document.getElementById('about');
-           var title = document.getElementById('title');
+         var bar = document.getElementById('bar');
+var list = document.getElementById('menubar');
 
-           
-           bar.addEventListener('click',toggleMenu);
-           
-           var header = document.getElementById('top-header');
-           
-           function toggleMenu() {
-               menu.classList.toggle('addheight');
-               menu.classList.toggle('addHeight730');
-               menu.classList.toggle('addHeight400');
-           }
-           
-           
-           
-           
-           
+bar.addEventListener('click', () => {
+    list.classList.toggle('addHeight400');
+})
+
+let targets = document.querySelectorAll('.target');
+
+var theBody = document.querySelectorAll('body');
+
+window.addEventListener("scroll", function(){
+    
+  let doc = document.documentElement;
+  let top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+  
+  let windowHeight = window.innerHeight;
+  
+  for (i = 0; i < targets.length; ++i) {
+    let target = targets[i];
+    if(target.offsetTop < (top + (windowHeight/2))) {
+        target.classList.add("visible");
+    }
+    else {
+        
+    }
+  }
+});
+
+
+
            
            
            
