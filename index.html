@@ -1040,7 +1040,39 @@ input[type='submit'] {
         <!--End Contact -->
         
         
-        <script src="moveOn.js"></script>
+        <script type="text/javascript">
+            var bar = document.getElementById('bar');
+var list = document.getElementById('menubar');
+
+bar.addEventListener('click', () => {
+    list.classList.toggle('addHeight400');
+})
+
+let targets = document.querySelectorAll('.target');
+
+var theBody = document.querySelectorAll('body');
+
+window.addEventListener("scroll", function(){
+    
+  let doc = document.documentElement;
+  let top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+  
+  let windowHeight = window.innerHeight;
+  
+  for (i = 0; i < targets.length; ++i) {
+    let target = targets[i];
+    if(target.offsetTop < (top + (windowHeight/2))) {
+        target.classList.add("visible");
+    }
+    else {
+        
+    }
+  }
+});
+
+
+
+        </script>
         
     </body>
 </html>
