@@ -46,7 +46,7 @@ body {
 }
 
 #top-header {
-    background: #333333;
+    background: #242424;
     display: flex;
     padding: .5rem 1rem ;
     width: 100%;    
@@ -102,7 +102,7 @@ a .fa-code {
     font-size: 1.1rem;
 }
 .my-banner {
-    background: url("https://i.ibb.co/wg1xFyW/nordwood-themes-k-RNZi-GKtz48-unsplash.jpg");
+    background: url("web-development-background-8.jpg");
     background-size: cover;
     float: left;;
     background-position: center;
@@ -112,40 +112,38 @@ a .fa-code {
     padding-top: 3rem;
     display: flex;
     flex-direction: column;
-    text-align: start;
-    align-content: flex-start;
+    text-align: center;
+    align-content: center;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    background: rgba(0,0,0, 0.6);
     height: 93vh;
-    padding-left: 7rem;
     font-family: calibri;
 }
 .my-banner h2 {
     margin-top: 3rem;
     font-size: 4.1rem;
-    color: #4b4b4b;
+    color: #fff;
     margin-bottom: 0;
 }
 .my-banner h4 {
     font-weight: 100;
-    color: #4b4b4b;
+    color: #fff;
     font-size: 2.5rem;
 }
 
 .my-banner a{
-    padding: .7rem 2rem;
+    padding: .5rem 2rem;
     text-decoration: none;
     text-shadow: none;
     transition: 1s;
     background: transparent;
-    color: #4b4b4b;
+    color: #fff;
     font-size: 1.2rem;
-    border:2px solid #007BFF;
     border-radius: .2rem;
+    background: #007BFF;
 }
-.my-banner a:hover {
-    border-color: #007BFF;
-}
+
 
 
 /* --------- End Home ---------*/
@@ -198,7 +196,6 @@ a .fa-code {
     margin: auto;
     display: none;
     background: #fff;
-   
     border-radius: .3rem;
     box-shadow: .1rem .1rem .4rem rgba(172, 172, 172, 0.6);
 }
@@ -324,6 +321,9 @@ a .fa-code {
 #project .col-md-4 {
     margin: 0;
 }
+            #project .card {
+                height: 70vh;
+            }
 
 /*--------------------End Project--------------------*/
 
@@ -514,10 +514,10 @@ input[type='submit'] {
     .addHeight730 {
         height: 10rem;
     }
-    .row {
+    .my-row {
         width: 80%;
     }
-    .row input[type='submit'] {
+    .my-row input[type='submit'] {
         padding: .6rem 0;
         width: 100%;
         margin-top: 1rem;
@@ -550,6 +550,8 @@ input[type='submit'] {
         height: 40vh;
     }
 }
+            
+            
 @media only screen and (max-width: 500px) {
     #top-header {
         padding: .5rem 0;
@@ -584,7 +586,7 @@ input[type='submit'] {
         color: #767676;
     }
     .my-banner {
-        background:url('https://i.ibb.co/Tb3z0dw/matthew-fournier-5-NM32v14n6-M-unsplash.jpg');
+        background:url('web-development-background-8.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -625,11 +627,20 @@ input[type='submit'] {
     .bg-dark h4 {
         font-size: 2rem;
     }
+    
+    /*-----About-----*/
+    #about-wrapper {
+        padding: 0;
+    }
     #about {
         padding: 0;
     }
+    #about-wrapper .target.visible h2,
+    #about-wrapper .target.visible .underline{
+        left: 36%;
+    }
     .bio {
-        margin: 0 2rem 2rem 2rem;
+        margin: 0 auto;
     }
     .bio img {
         height: auto;
@@ -640,7 +651,7 @@ input[type='submit'] {
     }
     .skill {
         padding: 0;
-        margin: 0 2rem;
+        margin: 2rem 3rem;
     }
     .my-skill {
         
@@ -662,6 +673,11 @@ input[type='submit'] {
     }
     .see-more .btn {
         margin: auto;
+    }
+    
+    #project,#contact {
+        padding: 0;
+        display: none;
     }
     
     .input-control {
