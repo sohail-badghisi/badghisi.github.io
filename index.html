@@ -637,14 +637,16 @@ input[type='submit'] {
     }
     #about-wrapper .target.visible h2,
     #about-wrapper .target.visible .underline{
-        left: 36%;
+        left: 35%;
     }
     .bio {
         margin: 0 auto;
+        padding: 0;
     }
     .bio img {
         height: auto;
         margin-bottom: 0;
+        height: 35vh;
     }
     .bio h2 {
         margin-bottom: .5rem;
@@ -654,20 +656,29 @@ input[type='submit'] {
         margin: 2rem 3rem;
     }
     .my-skill {
-        
+        margin: 1rem 0;
     }
-    .pr-wrapper {
-        flex-direction: column;
-
-        margin: 2rem 0; 
+    
+    /*----Project----*/
+    #project {
+        padding: 0%;
     }
-    .image {
-        border-bottom: 5px solid #cb3c59;
+    #project .title {
+        margin: 0rem 0;
     }
-    .image:nth-child(2) {
-        border-bottom: none;
-        border-top: 5px solid #cb3c59;
+    #project .target.visible h2 {
+        left: 26%;
     }
+    
+    .container {
+        margin-top: 0%;
+    }
+    
+    #project .card {
+        margin: 1rem 0;
+        height: 60vh;
+    }
+    
     .see-more {
         text-align: center;
     }
@@ -675,7 +686,7 @@ input[type='submit'] {
         margin: auto;
     }
     
-    #project,#contact {
+    #contact {
         padding: 0;
         display: none;
     }
@@ -891,7 +902,7 @@ input[type='submit'] {
             
             
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" style="margin: 4rem 0 0 0;">
             <div class="col-md-4">
                 <div class="card shadow" style="width: 20rem;">
                     <div class="inner">
