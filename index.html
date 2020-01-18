@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <style type="text/css">
-            * {
+                     * {
     margin: 0;
     padding: 0;
 }
@@ -102,7 +102,7 @@ a .fa-code {
     font-size: 1.1rem;
 }
 .my-banner {
-    background: url("https://i.ibb.co/5GKfvG6/web-development-background-8.jpg");
+    background: url("web-development-background-8.jpg");
     background-size: cover;
     float: left;;
     background-position: center;
@@ -206,7 +206,7 @@ a .fa-code {
     height: 45vh
 }
 .info {
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 1rem 1rem ;
     text-align: center;
 }
 .info h2 {
@@ -299,32 +299,68 @@ a .fa-code {
     left: -100%;
     transition: .5s;
 }
+            #project  .underline {
+                width: 160px;
+            }
 #project .target.visible h2{
     left: 43%;
 }
-.container{
-    margin-top: 8%;
+.box-panel {
+    display: grid;
+    margin-top: 5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem 1rem;
+    padding: 0 6rem;
 }
- 
-.inner{
+.box {
+    opacity: .7;
     overflow: hidden;
+    background: #fff;
+    text-align: center;
+    box-shadow: .1rem .1rem .5rem rgba(44, 43, 43, 0.6);
+    display: flex;
+    border-radius: .3rem;
+    flex-direction: column;
 }
- 
-.inner img{
-    transition: all 1.5s ease;
+.addOpacity {
+    opacity: 1;
+    transition: .5s;
 }
- 
-.inner:hover img{
-    transform: scale(1.5);
+.box-image {
+    flex: 1;
 }
-
-#project .col-md-4 {
-    margin: 0;
+.box-article {
+    flex: 1;
 }
-            #project .card {
-                height: 70vh;
-            }
-
+.box img {
+    width: 100%;
+    border-radius: .3rem .3rem 0 0rem;
+}
+.box-article {
+    padding: 1rem 1rem 2rem;
+}
+.box-article h1 {
+    font-size: 1.5rem;
+}
+.box-article p {
+    color: #4b4b4b;
+}
+.see-more {
+    margin: 2rem 5rem;
+}
+.see-more a {
+    margin: auto;
+    background: none;
+    color: #4b4b4b;
+    border: none;
+    padding: 0;
+    margin-top: 1rem;
+    margin-left: 26rem;
+}
+.see-more a:hover {
+    background: none;
+    color: #4b4b4b;
+}
 /*--------------------End Project--------------------*/
 
 
@@ -569,7 +605,7 @@ input[type='submit'] {
     .list {
         width: 100%;
         height: 0%;
-        background: #eee;
+        background: #fff;
         top: 8.9%;
         border: none;
     }
@@ -583,10 +619,10 @@ input[type='submit'] {
         color: #4b4b4b;
     }
     .list .active {
-        color: #767676;
+        color: var(--color-one);
     }
     .my-banner {
-       
+        background:url('web-development-background-8.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -613,7 +649,7 @@ input[type='submit'] {
     }
     .mybg-dark {
         padding: 0;
-        background: rgba(0,0,0, 0.9);
+        background: rgba(0,0,0, 0.5);
         flex-direction: column;
         text-align: center;
         align-content: center;
@@ -635,9 +671,21 @@ input[type='submit'] {
     #about {
         padding: 0;
     }
-    #about-wrapper .target.visible h2,
+    #about-wrapper .title .underline {
+        margin-left: 0;
+        width: 120px;
+        
+    }
+    #about-wrapper .title h2 {
+        
+    }
+    
+    #about-wrapper > .target.visible h2 {
+        left: 33%;
+    }
     #about-wrapper .target.visible .underline{
-        left: 35%;
+        left: 34%;
+        font-size: 2rem;
     }
     .bio {
         margin: 0 auto;
@@ -669,15 +717,13 @@ input[type='submit'] {
     #project .target.visible h2 {
         left: 27%;
     }
-    
-    .container {
-        margin-top: 0%;
-        padding: 0;
+    .box-panel {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
     }
-    
-    #project .card {
-        margin: 1rem 0;
-        height: 80vh;
+    .box {
+        width: 80%;
+        margin: auto;
     }
     
     .see-more {
@@ -700,11 +746,13 @@ input[type='submit'] {
     }
     #contact .title .underline {
         left: 0%;
-        margin-left: 6.7rem;
+        margin-left: 6.8rem;
+        width: 140px;
     }
     #contact .target.visible h2{
-        left: 26%;
-        margin: 0;
+        left: 30%;
+        margin: .3rem 0;
+        font-size: 2rem;
     }
     .touch {
         margin: 0;
@@ -716,10 +764,10 @@ input[type='submit'] {
     }
     .the-row {
         margin: 0 5%;
-        width: 85%;
+        width: 90%;
     }
     .the-row:nth-child(5) {
-        width: 76%;
+        width: 75%;
     }
     .the-row textarea {
         padding: .7rem .5rem;
@@ -748,6 +796,7 @@ input[type='submit'] {
     }
 }
         </style>
+        <link rel="stylesheet" type="text/css" href="main.css"/>
     </head>
     <body>
         
@@ -917,118 +966,101 @@ input[type='submit'] {
                 <h2>Project
                     <i class="fa fa-tasks"></i>
                 </h2>
-                <div class="underline" style="width: 140px;"></div>
+                <div class="underline"></div>
             </div>
             
-            <style type="text/css"> 
-                .container .row col-md-4 {
-                    width:80%;
-                }
-            </style>
             
-    <div class="container" id="the-container">
-        <div class="row justify-content-center" style=";margin: 4rem 0 0 0;">
-            <div class="col-md-4">
-                <div class="card shadow" style="width: 20rem; margin-right: 2rem;">
-                    <div class="inner">
-                        <img class="card-img-top" src="https://i.ibb.co/9ZG7WLm/17947-Create-Free-Online-Portfolio-Websites.jpg" alt="Card image cap">
+            <div class="box-panel">
+                
+                <div class="box">
+                    <div class="box-image">
+                        <img src="i03fnmea06331.jpg">
                     </div>
-                    <div class="card-body text-center">
-                      <h5 class="card-title">Design</h5>
-                      <p class="card-text">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                      </p>
-                      <a href="#" class="btn btn-primary">Learn More...</a>
+                    <div class="box-article">
+                        <h1>Youtube</h1>
+                        <p>
+                        psum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <a href="#" class="btn btn-primary">Demo <i class="fa fa-eye"></i></a>
+                        <a href="#" class="btn btn-primary">Download <i class="fa fa-download"></i></a>
                     </div>
-                  </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow">
-                    <div class="inner">
-                            <img class="card-img-top" src="https://i.ibb.co/Lh0Cp5H/2834987.jpg" alt="Card image cap">
+                </div>
+                <div class="box">
+                    <div class="box-image">
+                        <img src="i03fnmea06331.jpg">
                     </div>
-                    
-                    <div class="card-body text-center">
-                      <h5 class="card-title">Responsive</h5>
-                      <p class="card-text">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                      </p>
-                      <a href="#" class="btn btn-primary">Learn More...</a>
+                    <div class="box-article">
+                        <h1>Buy Book</h1>
+                        <p>
+                        psum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <a href="#" class="btn btn-primary">Demo <i class="fa fa-eye"></i></a>
+                        <a href="#" class="btn btn-primary">Download <i class="fa fa-download"></i></a>
                     </div>
-                  </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow" style="width: 20rem;">
-                    <div class="inner">
-                            <img class="card-img-top" src="https://i.ibb.co/9ZG7WLm/17947-Create-Free-Online-Portfolio-Websites.jpg" alt="Card image cap">
+                </div>
+                <div class="box">
+                    <div class="box-image">
+                        <img src="i03fnmea06331.jpg">
                     </div>
-                    
-                    <div class="card-body text-center">
-                      <h5 class="card-title">UI/UX</h5>
-                      <p class="card-text">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                      </p>
-                      <a href="#" class="btn btn-primary">Learn More...</a>
+                    <div class="box-article">
+                        <h1>Afghan Chatroom</h1>
+                        <p>
+                        psum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <a href="#" class="btn btn-primary">Demo <i class="fa fa-eye"></i></a>
+                        <a href="#" class="btn btn-primary">Download <i class="fa fa-download"></i></a>
                     </div>
-                  </div>
+                </div>
+                <div class="box">
+                    <div class="box-image">
+                        <img src="i03fnmea06331.jpg">
+                    </div>
+                    <div class="box-article">
+                        <h1>Taksi App</h1>
+                        <p>
+                        psum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <a href="#" class="btn btn-primary">Demo <i class="fa fa-eye"></i></a>
+                        <a href="#" class="btn btn-primary">Download <i class="fa fa-download"></i></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-image">
+                        <img src="i03fnmea06331.jpg">
+                    </div>
+                    <div class="box-article">
+                        <h1>50 50 Restaurant</h1>
+                        <p>
+                        psum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <a href="#" class="btn btn-primary">Demo <i class="fa fa-eye"></i></a>
+                        <a href="#" class="btn btn-primary">Download <i class="fa fa-download"></i></a>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="box-image">
+                        <img src="i03fnmea06331.jpg">
+                    </div>
+                    <div class="box-article">
+                        <h1>cafe Book</h1>
+                        <p>
+                        psum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <a href="#" class="btn btn-primary">Demo <i class="fa fa-eye"></i></a>
+                        <a href="#" class="btn btn-primary">Download <i class="fa fa-download"></i></a>
+                    </div>
+                </div>
+                
             </div>
             
-            <div class="col-md-4" style="margin: 2% 0;">
-                <div class="card shadow" style="width: 20rem;">
-                    <div class="inner">
-                            <img class="card-img-top" src="https://i.ibb.co/Lh0Cp5H/2834987.jpg" alt="Card image cap">
-                    </div>
-                    
-                    <div class="card-body text-center">
-                      <h5 class="card-title">UI/UX</h5>
-                      <p class="card-text">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                      </p>
-                      <a href="#" class="btn btn-primary">Learn More...</a>
-                    </div>
-                  </div>
-            </div>
-            
-            <div class="col-md-4" style="margin: 2% 0;">
-                <div class="card shadow" style="width: 20rem;">
-                    <div class="inner">
-                            <img class="card-img-top" src="https://i.ibb.co/9ZG7WLm/17947-Create-Free-Online-Portfolio-Websites.jpg" alt="Card image cap">
-                    </div>
-                    
-                    <div class="card-body text-center">
-                      <h5 class="card-title">UI/UX</h5>
-                      <p class="card-text">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                      </p>
-                      <a href="#" class="btn btn-primary">Learn More...</a>
-                    </div>
-                  </div>
-            </div>
-            
-            <div class="col-md-4" style="margin: 2% 0;"> 
-                <div class="card shadow" style="width: 20rem;">
-                    <div class="inner">
-                            <img class="card-img-top" src="https://i.ibb.co/Lh0Cp5H/2834987.jpg" alt="Card image cap">
-                    </div>
-                    
-                    <div class="card-body text-center">
-                      <h5 class="card-title">UI/UX</h5>
-                      <p class="card-text">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                      </p>
-                      <a href="#" class="btn btn-primary">Learn More...</a>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </div>
-            
+       
             
             
           
@@ -1122,6 +1154,17 @@ window.addEventListener("scroll", function(){
   }
 });
 
+            var box = document.querySelectorAll('.box');
+            
+            for(let i = 0; i<box.length; i++) {
+                box[i].addEventListener('mouseover', ()=> {
+                    box[i].classList.add('addOpacity');
+                }); 
+            }
+            
+            
+            
+            
 
 
         </script>
