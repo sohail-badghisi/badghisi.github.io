@@ -4,15 +4,17 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>GETTING STARTED WITH BRACKETS</title>
+        <title>Sohail Badghisi</title>
         <meta name="description" content="An interactive getting started guide for Brackets.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style type="text/css"></style>
+        <link rel="stylesheet" type="text/css" href="main.css"/>
         <style type="text/css">
-                     * {
+                             * {
     margin: 0;
     padding: 0;
 }
@@ -20,6 +22,7 @@
 :root {
    --color-one: #007BFF;
 }
+
 /* Utilities */
 .title {
     padding: 3rem 0;
@@ -35,10 +38,7 @@
     color: var(--color-one);
 }
 .underline {
-    background:var(--color-one);
-    width: 100px;
-    height: 3px;
-    margin: auto;
+    display: none;
 }
 
 body {
@@ -497,12 +497,25 @@ input[type='submit'] {
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 9200px) {
     
     #top-header div:nth-child(1){
-        flex: 1;
+        flex: .9;
+        padding-left: 5rem;
+    }
+    #logo {
+        margin-left: 0rem;
     }
     
+    .my-banner h2{
+        font-size: 3.5rem;
+    }
+    .my-banner h4 {
+        font-size: 2.3rem;
+    }
+    .my-banner a {
+        font-size: 1rem;
+    }
     #about {
         padding-left: 1rem;
     }
@@ -523,32 +536,81 @@ input[type='submit'] {
         padding: 0 2rem;
     }
 }
+
+@media only screen and (max-width: 950px) {
+    #about {
+        padding: 1rem;
+    }
+    #about-me {
+        margin: 3rem 0;
+        padding: 0;
+    }
+    .bio {
+        padding: 0 ;
+        width: 100%;
+        margin: auto;
+    }
+    .info {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 850px) {
+    #about {
+        padding: 0;
+    }
+    .skill {
+        margin:  2rem;
+        padding: 0;
+    }
+    .bio {
+        margin-left: 3rem;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #top-header div:nth-child(1) {
+        padding-left: 2rem;
+    }
+    #logo {
+        margin-top: .2rem;
+        margin-left: 0;
+    }
+    #about {
+        flex-direction:column;
+    }
+    #about-me {
+        width: 60%;
+        margin: 1rem auto;
+    }
+    .bio {
+        width: 50%;
+        margin: auto;
+    }
+    .skill {
+        margin: 2rem 5rem;
+    }
+} 
 @media only screen and (max-width: 730px) {
     #bar {
-        display: block;
-        color: crimson;
+        display: none;
         font-size: 2rem;
         float: right;
         margin-right: 2rem;
     }
     .list {
-        position: fixed;
-        background: #404040;
-        top:3.7rem;
-        flex-direction: column;
+        flex-direction: row;
         right: 0;
-        width: 40%;
         justify-content: center;
         text-align: center;
-        height: 0;
         overflow: hidden;
         transition: .6s;
+        height: 30%;
     }
     .list li {
-        margin: .5rem 0;
+        margin: .1rem 2rem;
     }
     .addHeight730 {
-        height: 10rem;
+        height: 30rem;
+        width: 40%;
     }
     .my-row {
         width: 80%;
@@ -559,36 +621,48 @@ input[type='submit'] {
         margin-top: 1rem;
     }
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 600px) {
     
-    #about {
-        flex-direction: column;
+    #about-me {
+        width: 80%;
     }
-    .bio {
-        margin: 0 6rem 2rem 6rem; 
-        padding-bottom: 2rem;
+    
+    #about-wrapper > .target.visible h2 {
+        left: 36%;
     }
-    .skill {
-        margin: 0 3rem;
+    #about-wrapper .target.visible .underline{
+        left: 37%;
+        font-size: 2rem;
     }
-    .pr-wrapper {
-        flex-direction: column;
-        margin: 1rem 0;
-    }
-    .article {
-        padding: 2rem;
-        flex: 1;
-    }
-    .image {
-        flex: 1;
-    }
-    .image img {
-        height: 40vh;
-    }
+    
 }
-            
-            
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
+    #thebar {
+        display: block;
+        float: right;
+        margin: .5rem 1rem 0 0;
+    }
+    #thebar div {
+        height: 4px;
+        margin: .4rem 0;
+        background: #2a91ff;
+        transition: .1s;
+    }
+    .change .bar1 {
+        background: red;
+         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+         transform: rotate(-45deg) translate(-8px, 7px);
+    }
+    
+    .change .bar2 {
+        opacity: 0;
+    }
+    
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-7px, -7px);
+    }
+    
     #top-header {
         padding: .5rem 0;
     }
@@ -602,17 +676,26 @@ input[type='submit'] {
     #bar .fa{
         color: #2a8bf4;
     }
+
     .list {
-        width: 100%;
-        height: 0%;
+        width: 0%;
+        height: 93%;
         background: #fff;
-        top: 8.9%;
+        top: 8.5%;
         border: none;
+        position: absolute;
+        flex-direction: column;
+        border-bottom:1px solid red;
+        transition: .3s;
     }
-    .addHeight400 {
-        height: 20rem;
+    
+    
+    .addweight400 {
+        width: 60%;
+        transition: .3s;
     }
     .list li {
+        margin: .5rem 0;
     }
     .list a {
         font-size: 1.4rem;
@@ -670,6 +753,10 @@ input[type='submit'] {
     }
     #about {
         padding: 0;
+        width: 100%;
+    }
+    .bio {
+        width: 100%;
     }
     #about-wrapper .title .underline {
         margin-left: 0;
@@ -680,12 +767,8 @@ input[type='submit'] {
         
     }
     
-    #about-wrapper > .target.visible h2 {
-        left: 33%;
-    }
-    #about-wrapper .target.visible .underline{
-        left: 34%;
-        font-size: 2rem;
+    #about-me {
+        width: 80%;
     }
     .bio {
         margin: 0 auto;
@@ -715,10 +798,10 @@ input[type='submit'] {
         margin: 0rem 0;
     }
     #project .target.visible h2 {
-        left: 28%;
+        left: 33%;
     }
     #project .title .underline {
-        margin-left: 6.6rem;
+        margin-left: 10.2rem;
     }
     .box-panel {
         grid-template-columns: 1fr;
@@ -765,11 +848,11 @@ input[type='submit'] {
     }
     #contact .title .underline {
         left: 0%;
-        margin-left: 6.8rem;
+        margin-left: 10.8rem;
         width: 140px;
     }
     #contact .target.visible h2{
-        left: 30%;
+        left: 35%;
         margin: .3rem 0;
         font-size: 2rem;
     }
@@ -790,6 +873,7 @@ input[type='submit'] {
     }
     .the-row textarea {
         padding: .7rem .5rem;
+        font-size: 1rem;
     }
     .the-row input[type='submit'] {
         margin: .5rem 0;
@@ -806,7 +890,7 @@ input[type='submit'] {
 }
     .footer-wrapper  div{
         margin: 0 .5rem;
-        padding: .5rem 1.5rem;
+        padding: .5rem 2rem;
         font-size: 1rem;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
@@ -814,8 +898,61 @@ input[type='submit'] {
         font-size: 1rem;
     }
 }
+@media only screen and (max-width: 450px) {
+    #about-me {
+        width: 100%;
+        padding: 0;
+    }
+    .info {
+    }
+    .bio {
+        padding: 0;
+        width: 100%;
+    }
+    #project .target .underline {
+        margin-left: 9.5rem;
+    }
+    #contact .target.visible h2 {
+        left: 38%;
+    }
+}
+@media only screen and (max-width: 360px) {
+    #about-wrapper .target.visible h2 {
+        left: 35%;
+    }
+    #about-me {
+        width: 100%;
+        padding: 0;
+        margin: 1rem 0;;
+    }
+    .bio {
+        width: 100%;
+    }
+    #project .target.visible h2 {
+        left: 28%;
+    }
+    
+    #contact .target.visible h2 {
+        left: 28%;
+    }
+    .footer-wrapper  {
+        grid-template-columns: .1fr .1fr .1fr .1fr;
+        padding: 0;
+    }
+    .footer-wrapper {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        padding-left: 2rem;
+    }
+    .footer-wrapper div {
+        padding: .5rem 1.5rem;
+        margin: auto;
+        margin:0 .4rem;
+    }
+}
+
         </style>
-        <link rel="stylesheet" type="text/css" href="main.css"/>
     </head>
     <body>
         
@@ -835,9 +972,11 @@ input[type='submit'] {
                             <li><a href="#">Project</a></li>
                         </ul>
                     </nav>
-                    <a href="#" id="bar">
-                        <i class="fa fa-bars"></i>
-                    </a>
+                    <div id="thebar">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
                 </div>
             </header>
             <section class="my-banner">
@@ -1150,12 +1289,15 @@ input[type='submit'] {
         
         
         <script type="text/javascript">
-            var bar = document.getElementById('bar');
+            var bar = document.getElementById('thebar');
 var list = document.getElementById('menubar');
 
 bar.addEventListener('click', () => {
-    list.classList.toggle('addHeight400');
+    list.classList.toggle('addweight400');
+    bar.classList.toggle('change');
 })
+
+
 
 let targets = document.querySelectorAll('.target');
 
@@ -1178,19 +1320,6 @@ window.addEventListener("scroll", function(){
     }
   }
 });
-
-            var box = document.querySelectorAll('.box');
-            
-            for(let i = 0; i<box.length; i++) {
-                box[i].addEventListener('mouseover', ()=> {
-                    box[i].classList.add('addOpacity');
-                }); 
-            }
-            
-            
-            
-            
-
 
         </script>
         
