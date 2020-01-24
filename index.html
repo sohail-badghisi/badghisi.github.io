@@ -682,21 +682,21 @@ input[type='submit'] {
     }
 
     .list {
-        width: 0%;
-        height: 93%;
+        width: 100%;
+        height: 0%;
         background: #fff;
-        top: 8.5%;
+        top: 8.555%;
         border: none;
         position: absolute;
         flex-direction: column;
-        border-bottom:1px solid red;
         transition: .3s;
     }
     
     
     .addweight400 {
-        width: 60%;
+        width: 100%;
         transition: .3s;
+        height: 80%;;
     }
     .list li {
         margin: .5rem 0;
@@ -767,9 +767,6 @@ input[type='submit'] {
         width: 120px;
         
     }
-    #about-wrapper .title h2 {
-        
-    }
     
     #about-me {
         width: 80%;
@@ -812,19 +809,41 @@ input[type='submit'] {
         padding: 0 1rem;
     }
     .box {
-        width: 0%;
+        width: 85%;
+        opacity: 0;
         margin: auto;
         padding-bottom: 0;
         opacity: 1;
+        position: relative;
+        
         box-shadow: .1rem .1rem .3rem rgba(167, 167, 167, 0.6);
         transition: .5s;
+    }
+    .box:nth-child(1),
+    .box:nth-child(3){
+        left: -100%;
+    }
+    .box:nth-child(2) {
+        right: -100%;
     }
     .box:nth-child(5),.box:nth-child(6) {
         display: none;
     }
-    #project .target.visible {
+    .box:nth-child(4) {
+        opacity: 0;
+    }
+    #project .target.visible:nth-child(1),
+    #project .target.visible:nth-child(3){
         width: 85%;
+        opacity: 1;
+        left: 0%;
     } 
+    #project .target.visible:nth-child(2) {
+        right: 0%;
+    }
+    #project .target.visible:nth-child(4){
+        opacity: 1;
+    }
     .box img {
         height: auto;
     }
@@ -920,7 +939,7 @@ input[type='submit'] {
         left: 38%;
     }
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 400px) {
     #about-wrapper .target.visible h2 {
         left: 35%;
     }
@@ -955,6 +974,11 @@ input[type='submit'] {
         margin:0 .4rem;
     }
 }
+
+
+
+
+
 
         </style>
     </head>
