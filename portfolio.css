@@ -1,4 +1,4 @@
-                     * {
+* {
     margin: 0;
     padding: 0;
 }
@@ -147,7 +147,7 @@ a .fa-code {
 #contact .title h2,
 #about-wrapper .title .underline {
     position: absolute;
-    left: -200%;
+    left: -100%;
     transition: .5s;
 }
 
@@ -158,7 +158,7 @@ a .fa-code {
 #about-wrapper .target.visible h2,
 #about-wrapper .target .underline,
 #contact .target.visible h2{
-    left: 45%;
+    left: 44%;
 }
 #contact .title .underline {
     width: 150px;
@@ -395,7 +395,6 @@ a .fa-code {
     margin: .2rem 0;
     z-index: auto;
     border: none;
-    font-size: .9rem;
     outline-width: 1px;
     outline-color: #434a5f;
 }
@@ -411,7 +410,7 @@ textarea {
     width: 100%;
     padding: 1% 2%;
     height: 7rem;
-    font-size:.9rem;
+    font-size:.8rem;
     outline-color: #434a5f;
 }
 
@@ -907,6 +906,9 @@ input[type='submit'] {
     }
 }
 @media only screen and (max-width: 450px) {
+    .list {
+        top: 8%;
+    }
     #about-me {
         width: 100%;
         padding: 0;
@@ -959,8 +961,3 @@ input[type='submit'] {
         margin:0 .4rem;
     }
 }
-
-
-
-
-
