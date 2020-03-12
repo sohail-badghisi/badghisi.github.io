@@ -14,23 +14,21 @@
 }
 .title h2 {
     color: #4b4b4b;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
 }
 .title .fa {
     font-weight: 600;
     font-size: 2rem;
     color: var(--color-one);
 }
-.underline {
-    display: none;
-}
+
 
 body {
     font-family: 'roboto', serif
 }
 
 #top-header {
-    background: #242424;
+    background: #252525;
     display: flex;
     padding: .5rem 1rem ;
     width: 100%;    
@@ -123,7 +121,7 @@ a .fa-code {
     transition: 1s;
     background: transparent;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 3rem;
     border-radius: .2rem;
     background: #007BFF;
 }
@@ -142,13 +140,16 @@ a .fa-code {
     float: left;
     width: 100%;
 }
-
+#about-wrapper .title {
+    margin-bottom:1rem;
+}
 #about-wrapper .title h2,
 #contact .title h2,
 #about-wrapper .title .underline {
     position: absolute;
     left: -100%;
     transition: .5s;
+    
 }
 
 #about-wrapper .title .underline {
@@ -158,28 +159,24 @@ a .fa-code {
 #about-wrapper .target.visible h2,
 #about-wrapper .target .underline,
 #contact .target.visible h2{
-    left: 44%;
+    left: 43%;
 }
-#contact .title .underline {
-    width: 150px;
-    margin-left: 36rem;
-}
+
 
 
 #about-me {
     padding-left: 4rem;
-    flex: .9;
-    margin-top: 1.5rem;
+    flex: 1;
     justify-content: center;
 }
 #about-me .target.visible {
     transition: .5s;
     display: block;
-    width: 75%;
+    width: 85%;
 }
 
 .bio {
-    width: 80%;
+    width: 100%;
     margin: auto;
     display: none;
     background: #fff;
@@ -190,28 +187,31 @@ a .fa-code {
     border-radius: .3rem;
     width: 96%;
     margin: 2%;
-    height: 45vh
+    height: auto;
 }
 .info {
     width: 100%;
-    padding: 2rem 1rem 1rem 1rem ;
+    padding: 1rem 1rem 1rem 1rem ;
     text-align: center;
 }
 .info h2 {
     margin-bottom: .7rem;
     text-transform: uppercase;
     color: #4b4b4b;
+    font-size:1.6rem;
+    margin-top:0;
 }
 .info p {
     color: #585757;
     margin-bottom: 1rem;
+    font-size:1.1rem;
 }
 
 .info .btn {
     display: block;
     font-size: 1rem;
     background: var(--color-one);
-    padding: .4rem 2rem;
+    padding: .3rem 2rem;
     color: #fff;
     text-decoration: none;
     margin: .1rem 0;
@@ -227,12 +227,12 @@ a .fa-code {
     padding: 0 2rem;
 }
 .my-skill {
-    margin: 2rem 0;
+    margin: 1rem 0;
     display: flex;
     flex-direction: column;
 }
 .my-skill:nth-child(1) {
-    margin: 0;
+    margin-top:.1rem;
 }
 .my-skill > div {
     width: 100%;
@@ -274,7 +274,7 @@ a .fa-code {
 
 /* ----------------Start Project----------------*/
 #project {
-    padding: 0 5% 5% 5% ;
+    padding: 5rem 0 ;
     width: 100%;
     float: left;
     background:#eee;
@@ -291,7 +291,7 @@ a .fa-code {
                 width: 160px;
             }
 #project .target.visible h2{
-    left: 43%;
+    left: 41%;
 }
 .box-panel {
     display: grid;
@@ -325,30 +325,17 @@ a .fa-code {
     border-radius: .3rem .3rem 0 0rem;
 }
 .box-article {
-    padding: 1rem 1rem 2rem;
+    padding: .6rem 1rem;
 }
 .box-article h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .box-article p {
     color: #4b4b4b;
+    font-size:1rem;
+    line-height:1rem;
 }
-.see-more {
-    margin: 2rem 5rem;
-}
-.see-more a {
-    margin: auto;
-    background: none;
-    color: #4b4b4b;
-    border: none;
-    padding: 0;
-    margin-top: 1rem;
-    margin-left: 26rem;
-}
-.see-more a:hover {
-    background: none;
-    color: #4b4b4b;
-}
+
 /*--------------------End Project--------------------*/
 
 
@@ -531,7 +518,7 @@ input[type='submit'] {
     }
     #about-me {
         margin: 3rem 0;
-        padding: 0;
+        padding: 0 2rem;
     }
     .bio {
         padding: 0 ;
@@ -541,6 +528,9 @@ input[type='submit'] {
     .info {
         width: 100%;
     }
+    .my-skill:nth-child(1) {
+        margin-top:4rem;
+    }
 }
 @media only screen and (max-width: 850px) {
     #about {
@@ -549,6 +539,9 @@ input[type='submit'] {
     .skill {
         margin:  2rem;
         padding: 0;
+    }
+    .my-skill:nth-child(1) {
+        margin-top:1rem;
     }
     .bio {
         margin-left: 3rem;
@@ -960,4 +953,4 @@ input[type='submit'] {
         margin: auto;
         margin:0 .4rem;
     }
-}
+}v
