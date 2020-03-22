@@ -472,7 +472,7 @@ input[type='submit'] {
     #thebar {
         display: block;
         float: right;
-        margin-right: 1rem;;
+        margin:0;
         margin-top: .4rem;
     }
     .bar1,.bar2,.bar3 {
