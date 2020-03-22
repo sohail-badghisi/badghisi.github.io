@@ -503,7 +503,7 @@ input[type='submit'] {
     nav {
         transition: .3s;
         position: absolute;
-        top:8.7%;
+        top:9%;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -532,7 +532,7 @@ input[type='submit'] {
         color: #4b4b4b;
     }
     .menuBar {
-        height: 35%;
+        height: 30rem;
         padding-top: .7rem;
     }
     /* --------------End Header--------------   */
