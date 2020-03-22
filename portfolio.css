@@ -578,12 +578,18 @@ input[type='submit'] {
     }
     
     .bio {
+        background: none;
         margin: 0;
         padding-bottom: .2rem;;;
         margin-bottom: 2rem;
+        border: none;
+        
     }
     .bio img {
-        height: 32vh;
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+        margin-bottom: .5rem;
     }
     .bio h3 {
         margin: .5rem 0;
