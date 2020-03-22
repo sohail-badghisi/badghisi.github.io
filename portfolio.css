@@ -570,7 +570,7 @@ input[type='submit'] {
     /* ------ Start About ------*/
     #about {
         flex-direction: column;
-        padding: 0 2rem 2rem 2rem;
+        padding: 0 2.5rem 2rem 2.5rem;
     }
     
     #about-wrapper .target.visible h2 {
@@ -600,6 +600,56 @@ input[type='submit'] {
     .my-skill {
         margin: .6rem 0;;
     }
+    /* -----End About------*/
+    
+    /* -----Start Project------*/
+    #project {
+        padding: 2rem 2rem 3rem 2rem;;
+    }
+    
+    #project .target.visible h2{
+        left: 30%;
+    }
+    .box-panel {
+        margin-top:  4rem;;
+        padding: 0;
+        grid-template-columns: 1fr;
+    }
+    /* -----End Project------*/
+    
+    /* -----Start Contact------*/
+    #contact {
+        padding: 0;
+        margin: 0;p
+    }
+    #contact .target.visible h2 {
+        left: 25.5%;
+    }
+    .touch {
+        margin: 10% 5% 0% 5%;
+    }
+    textarea {
+        font-size: 1rem;
+    }
+    .input-control {
+        padding: .7rem .5rem;
+        font-size: 1rem;
+    }
+    input[type='submit'] {
+        padding: .5rem 1rem;
+        margin: .5rem 0;
+        width: 100%;
+    }
+    #the-footer {
+        margin-top: 2rem;;
+    }
+    .footer-wrapper {
+        width: 70%;
+        grid-column-gap: 0rem;
+    }
+    .footer-wrapper div {
+        border: none;
+    }
     
 }
 
@@ -616,4 +666,3 @@ input[type='submit'] {
 
 
 
-// 
