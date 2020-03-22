@@ -110,14 +110,14 @@ a .fa-code {
 }
 .my-banner h2 {
     margin-top: 3rem;
-    font-size: 4.1rem;
+    font-size: 3.1rem;
     color: #fff;
     margin-bottom: 0;
 }
 .my-banner h4 {
     font-weight: 100;
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 
 .my-banner a{
@@ -127,7 +127,7 @@ a .fa-code {
     transition: 1s;
     background: transparent;
     color: #fff;
-    font-size: 3rem;
+    font-size: 1rem;
     border-radius: .2rem;
     background: var(--color-one);;
 }
@@ -462,12 +462,17 @@ input[type='submit'] {
 @media only screen and (max-width: 400px) {
     #top-header {
         padding: .6rem 1rem;;
+        display: block;
+        float: left;
+        
     }
     #logo-wrapper {
         padding: 0;
     }
     #logo {
         margin: 0;
+        color: cornsilk;
+        margin-top: .1rem;
     }
     #thebar {
         display: block;
