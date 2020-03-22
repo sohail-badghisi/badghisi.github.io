@@ -1,8 +1,8 @@
- var bar = document.getElementById('thebar');
+var bar = document.getElementById('thebar');
 var list = document.getElementById('menubar');
 
 bar.addEventListener('click', () => {
-    list.classList.toggle('addweight400');
+    list.classList.toggle('menuBar');
     bar.classList.toggle('change');
 })
 
@@ -29,9 +29,15 @@ window.addEventListener("scroll", function(){
     }
   }
 });
-            var box = document.querySelectorAll('.box');
-            for(var i=0; i<box.length; i++) {
-                box[i].addEventListener('mouseover', ()=> {
-                   box[i].classList.toggle('addOpacity');
-                })
-            }
+var box = document.querySelectorAll('.box');
+    for(var i=0; i<box.length; i++) {
+        box[i].addEventListener('mouseover', ()=> {
+        box[i].classList.toggle('addOpacity');
+    })
+}
+
+
+
+
+
+
