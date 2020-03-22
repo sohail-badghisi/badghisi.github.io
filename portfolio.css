@@ -229,6 +229,7 @@ a .fa-code {
     background: #eee;
     margin: .5rem 0; 
     width: 100%;
+    border-radius: 0;
 }
 
 .progress-bar {
@@ -236,6 +237,7 @@ a .fa-code {
     padding: .4rem 0;
     width: 0%;
     transition:3s;
+    border-radius: 0;
 }
 
 .target.visible .html { width: 95%; }
@@ -568,7 +570,7 @@ input[type='submit'] {
     /* ------ Start About ------*/
     #about {
         flex-direction: column;
-        padding: 0 3rem 2rem 3rem;
+        padding: 0 2rem 2rem 2rem;
     }
     
     #about-wrapper .target.visible h2 {
