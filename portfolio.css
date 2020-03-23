@@ -35,12 +35,8 @@ body {
     padding: .5rem 1rem ;
     width: 100%;    
 }
-#top-header div {
-    flex: 1;
-}
-
 #top-header div:nth-child(1) {
-   
+    flex: .9;
 }
 
 #top-header a {
@@ -233,10 +229,10 @@ a .fa-code {
 }
 
 .progress-bar {
-    background: #585858;
+    background: #626262;
     padding: .4rem 0;
     width: 0%;
-    transition:1.5s;
+    transition:3s;
     border-radius: 0;
 }
 
@@ -251,9 +247,56 @@ a .fa-code {
 /* ----------------End About Section---------------- */
 
 
+/* ----------------Start Can Do Section---------------- */
+#ability {
+    float: left;
+    width: 100%;
+    background: #505269;
+    color: #fff;
+}
+#ability .title {
+    padding-bottom: 5rem;;
+}
+#ability .title h2 {
+    color: #fff;
+    left: -50%;
+    position: absolute;
+    transition: .3s;
+}
+#ability .target.visible h2 {
+    left: 25%;
+}
+.abilities {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 0 5rem 0 ;
+}
+.canDo {
+    background: #404255;
+    padding: 5rem;
+    width: 30%;
+    box-shadow: .1rem .1rem .3rem rgba(32, 34, 46, 0.41);
+}
+.canDo h2 {
+    font-size: 2rem;
+}
+.canDo .fa {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.canDo .fa-mobile {color: sandybrown;}
+.canDo .fa-tablet {color: bisque;font-size:3rem;}
+.canDo .fa-laptop {color: aqua;font-size: 4rem;}
+.canDo .fa-code {color: #f8365d;}
+
+.canDo .fa-search-plus {color: antiquewhite;}
+/* ----------------End Can Do Section---------------- */
+
 /* ----------------Start Project----------------*/
 #project {
-    padding: 3rem 0 5rem 0 ;
+    padding: 3rem 4rem 5rem 4rem ;
     width: 100%;
     float: left;
     background:#eee;
@@ -276,7 +319,7 @@ a .fa-code {
     display: grid;
     margin-top: 6rem;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 3rem 3rem;
+    grid-gap: 3rem 1rem;
     padding: 0 6rem;
 }
 .box {
@@ -390,7 +433,6 @@ input[type='submit'] {
     width: 15%;
     margin-left: 42rem;
     margin-top: .3rem;
-    border-radius: .2rem;
     transition: .8s;
     background: var(--color-one);
     color: #fff;
@@ -414,7 +456,6 @@ input[type='submit'] {
     padding: .6rem 1rem;
     background: #252934;
     cursor: pointer;
-    border: 1px solid #4e4e4e;
     border-radius: .2rem;
     transition: .6s;
     color: #fff;
@@ -459,7 +500,7 @@ input[type='submit'] {
 
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
     /* --------Utilities--------   */
     .title {
         padding: 2rem;
@@ -607,6 +648,29 @@ input[type='submit'] {
         margin: .6rem 0;;
     }
     /* -----End About------*/
+    
+    
+    /* -----Start Abilities------*/
+    
+    .abilities {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    
+    .canDo {
+        width: 80%;
+        margin: 5% auto;
+        padding: 2rem 1rem;
+    }
+    .canDo h2 {
+        font-size: 1.8rem;
+        color: #ffff8d;
+    }
+    .canDo p {
+        font-size: 1.2rem;
+        color: #dededc;
+    }
+    /* -----End Abilities------*/
     
     /* -----Start Project------*/
     #project {
