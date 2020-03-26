@@ -24,9 +24,8 @@
 
 
 body {
-/*    font-family: 'roboto', serif;*/
-    /*font-family: 'Playfair Display', serif; */
-    font-family: 'Lora', serif;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 #top-header {
@@ -42,20 +41,16 @@ body {
 #top-header a {
     text-decoration: none;
 }
-a .fa-code {
-    font-weight: bolder;
-    color: #adc5de;
-}
+
 #logo-wrapper {
     padding-left: 5rem;
 }
 #logo {
     font-size: 1.5rem;
-    margin-top: .1rem;
+    margin-top: .3rem;
     float: left;
-    margin-left: 22rem;
     margin-left: 1rem;
-    color: #fff;;
+    color: #eee;
     font-weight: bold;
 }
 #bar {
@@ -86,7 +81,6 @@ a .fa-code {
 .list a {
     font-size: 1.1rem;
 }
-
 .my-banner {
     background: url("https://i.ibb.co/NspLkfJ/img5.jpg");
     background-size: cover;
@@ -126,11 +120,12 @@ a .fa-code {
     color: #fff;
     font-size: 1rem;
     border-radius: .2rem;
-    background: var(--color-one);;
+    background: none;
 }
-.my-banner .btn .btn-info {
-    background:red;
-} 
+.my-banner a:hover {
+    background: var(--color-one);
+}
+
 
 
 /* --------- End Home ---------*/
@@ -233,7 +228,7 @@ a .fa-code {
     background: #626262;
     padding: .4rem 0;
     width: 0%;
-    transition:1s;
+    transition:3s;
     border-radius: 0;
 }
 
@@ -250,6 +245,7 @@ a .fa-code {
 
 /* ----------------Start Can Do Section---------------- */
 #ability {
+    padding: 0 5rem;
     float: left;
     width: 100%;
     background: #505269;
@@ -265,7 +261,7 @@ a .fa-code {
     transition: .3s;
 }
 #ability .target.visible h2 {
-    left: 25%;
+    left: 43%;
 }
 .abilities {
     display: flex;
@@ -501,7 +497,7 @@ input[type='submit'] {
 
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
     /* --------Utilities--------   */
     .title {
         padding: 2rem;
@@ -652,20 +648,27 @@ input[type='submit'] {
     
     
     /* -----Start Abilities------*/
+    #ability {
+        padding:0;
+    }
+    #ability .target.visible h2 {
+        left: 25%;
+    }
     
     .abilities {
         flex-direction: column;
         margin-bottom: 2rem;
     }
     
+    
     .canDo {
-        width: 80%;
+        width: 100%;
         margin: 5% auto;
         padding: 2rem 1rem;
     }
     .canDo h2 {
         font-size: 1.8rem;
-        color: #ffff8d;
+        color: #eee;
     }
     .canDo p {
         font-size: 1.2rem;
