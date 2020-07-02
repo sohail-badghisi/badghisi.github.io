@@ -672,11 +672,13 @@ body {
         margin: 0;
     }
     #contact .target.visible h2 {
-        left: 28%;
+        left: 30%;
         font-size:2rem;
     }
     .touch {
         height:20vh;;
+        width:100%;
+        padding-left:10%;
     }
     .touch .row {
         float:left;
@@ -707,5 +709,17 @@ body {
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
